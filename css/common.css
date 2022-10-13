@@ -1,0 +1,150 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: 0;
+}
+
+.button {
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.header__item a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+.header__search {
+  width: 17px;
+  height: 17px;
+  background-image: url(../pic/loupe.png);
+  background-color: transparent;
+}
+
+.header__contact a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.category__item {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  Line-height 32px;
+  text-transform: uppercase;
+  height: 280px;
+  width: 270px;
+}
+
+.category__item a {
+  color: #FFFFFF;
+}
+
+.category_kids {
+  background-image: url(../pic/tshort.png);
+  background-color: #DBE4DB;
+  background-repeat: no-repeat;
+}
+
+.category_holiday {
+  background-image: url(../pic/socks.png);
+  background-color: #EADDD3;
+  background-repeat: no-repeat;
+}
+
+.category_toys {
+  background-image: url(../pic/deer.png);
+  background-color: #F8F2DA;
+  background-repeat: no-repeat;
+}
+
+.category_accessories {
+  background-image: url(../pic/troll.png);
+  background-color: #D5D4E1;
+  background-repeat: no-repeat;
+}
+
+.category_sale {
+  background-image: url(../pic/flamingo.png);
+  background-color: #F3D0DB;
+  background-repeat: no-repeat;
+}
+
+.category_adults{
+  background-image: url(../pic/dress.png);
+  background-color: #E5EAF8;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  background-color: #434343;
+}
+
+.aside__title {
+  color: #AAAAAA;
+}
+
+.aside__item a,
+.footer__copyright {
+  color: #FFFFFF;
+}
+
+.footer__copyright_dark {
+  color: #A2A2A2;
+}
+
+.nav-list__item a{
+font-family: 'Crimson Text';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+color: #1E0606;
+}
+
+.nav-list__item_active a{
+font-family: 'Crimson Text';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+color: #E5E5E5;;
+}
+
