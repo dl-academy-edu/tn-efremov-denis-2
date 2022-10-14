@@ -14,14 +14,14 @@
     <nav class="header__menu">
       <ul class="header__list">
         <li class="header__item"><a href="#">Blog</a></li>
-        <li class="header__item"><a href="#">Catalog</a></li>
+        <li class="header__item"><a href="catalog.html">Catalog</a></li>
         <li class="header__item"><a href="#">About Us</a></li>
       </ul>
     </nav>
     <button class="header__search"></button>
     <div class="header__contact"><a href="#">Contact Us</a></div>
   </header>
-  <aside>
+ <main>
     <form class="aside-form">
       <div>
         <h3 class="aside-form__title">Cost</h3>
@@ -30,33 +30,30 @@
       <div>
         <h3 class="aside-form__title">Color</h3>
         <ul class="aside-form__list">
-          <li class="aside-form__item"><input type="checkbox" name="color" value="Black" checked>Black</li>
-          <li class="aside-form__item"><input type="checkbox" name="color" value="Blue">Blue</li>
-          <li class="aside-form__item"><input type="checkbox" name="color" value="Green">Green</li>
-          <li class="aside-form__item"><input type="checkbox" name="color" value="White">White</li>
+          <li class="aside-form__item"><label for= "black">Black</label><input type="checkbox" name="black" value="Black" id="black" checked></li>
+          <li class="aside-form__item"><label for= "blue">Blue</label><input type="checkbox" name="blue" value="Blue" id="blue"></li>
+          <li class="aside-form__item"><label for= "green">Green</label><input type="checkbox" name="green" value="Green" id="green"></li>
+          <li class="aside-form__item"><label for= "white">White</label><input type="checkbox" name="white" value="White" id="white"></li>
         </ul>
       </div>
       <div>
         <h3 class="aside-form__title">Delivery</h3>
         <ul class="aside-form__list">
-          <li class="aside-form__item"><input type="radio" name="delivery" value="free">Free shipping</li>
-          <li class="aside-form__item"><input type="radio" name="delivery" value="fast">Fast shipping</li>
+          <li class="aside-form__item"><label for= "free">Free shipping</label><input type="radio" name="delivery" value="free" id="free"></li>
+          <li class="aside-form__item"><label for= "fast">Fast shipping</label><input type="radio" name="delivery" value="fast" id="fast"></li>
         </ul>
       </div>
-      <div>
-        <h3 class="aside-form__title">Amount</h3>
-        <table class="aside-form__table">
-          <tr>
-            <td class="aside-form__cell">0-5</td>
-            <td class="aside-form__cell">10-20</td>
-            <td class="aside-form__cell">20-50</td>
-          </tr>
-        </table>
+      <div class="amount">
+        <h3 class="amount__title">Amount</h3>
+        <ul class="amount__list">
+          <li class="amount__item">0-5</li>
+          <li class="amount__item">10-20</li>
+          <li class="amount__item">10-20</li>
+        </ul>
       </div>
       <input type="submit" value="Apply" class="aside-form__button">
     </form>
-  </aside>
-  <main>
+
     <h1>Toy for kids</h1>
     <ul class="nav-list">
       <li class="nav-list__item"><a href="index.html">Home</a></li>
