@@ -4,57 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <title>Catalog</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/catalog.css">
 </head>
 
 <body>
   <header class="header">
-    <img class="logo" src="pic/logo.png" alt="logo">
+    <a href="index.html"><img class="logo" src="pic/logo.png" alt="logo"></a>
     <nav class="header__menu">
       <ul class="header__list">
         <li class="header__item"><a href="#">Blog</a></li>
-        <li class="header__item"><a href="#">Catalog</a></li>
+        <li class="header__item"><a href="catalog.html">Catalog</a></li>
         <li class="header__item"><a href="#">About Us</a></li>
       </ul>
     </nav>
-    <button class="header__search"><img src="pic/lupa.png" alt="lupa"></button>
-    <a href="#" class="header__contact">Contact Us</a>
+    <button class="header__search"></button>
+    <div class="header__contact"><a href="#" >Contact Us</a></div>
   </header>
   <main>
     <h1>Category Products</h1>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <!--arrow_left_small-->
-      <a href="#">Catalog</a>
-    </nav>
-    <ul class="product-list">
-      <li class="product-list__item"><a href="#">
+    <ul class="nav-list">
+      <li class="nav-list__item"><a  href="index.html">Home</a></li>
+      <li class="nav-list__item_active"><a  href="catalog.html">Catalog</a></li>
+    </ul>
+    <ul class="category__list">
+      <li class="category__item category_kids"><a href="#">
           <!--tshort-->APPAREL KIDS
         </a></li>
-      <li class="product-list__item"><a href="#">
+      <li class="category__item category_holiday"><a href="#">
           <!--sock-->HOLIDAY SHOP
         </a></li>
-      <li class="product-list__item"><a href="#">
+      <li class="category__item category_toys"><a href="#">
           <!--deer-->TOYS
         </a></li>
-      <li class="product-list__item"><a href="#">
+      <li class="category__item category_accessories"><a href="#">
           <!--troll-->ACCESSORIES
         </a></li>
-      <li class="product-list__item"><a href="#">
+      <li class="category__item category_sale"><a href="#">
           <!--flamingo-->SALE
         </a></li>
-      <li class="product-list__item"><a href="#">
+      <li class="category__item category_adults"><a href="#">
           <!--dress-->APPAREL ADULTS
         </a></li>
     </ul>
     <article class="product-description">
-      <h2 class="product-description__title">Product Description</h2>
+      <h2>Product Description</h2>
       <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
       <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
       <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
     </article>
   </main>
-   <footer class="footer">
+  <footer class="footer">
     <nav>
       <div class="aside">
         <h3 class="aside__title">Navigation</h3>

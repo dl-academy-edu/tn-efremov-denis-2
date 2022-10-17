@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Toys</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/toys.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="logo" src="pic/logo.png" alt="logo"></a>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item"><a href="#">Blog</a></li>
+        <li class="header__item"><a href="catalog.html">Catalog</a></li>
+        <li class="header__item"><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <button class="header__search"></button>
+    <div class="header__contact"><a href="#">Contact Us</a></div>
+  </header>
+ <main>
+    <form class="aside-form">
+      <div>
+        <h3 class="aside-form__title">Cost</h3>
+        <input type="range" min="0" max="500" value="100">
+      </div>
+      <div>
+        <h3 class="aside-form__title">Color</h3>
+        <ul class="aside-form__list">
+          <li class="aside-form__item"><label for= "black">Black</label><input type="checkbox" name="black" value="Black" id="black" checked></li>
+          <li class="aside-form__item"><label for= "blue">Blue</label><input type="checkbox" name="blue" value="Blue" id="blue"></li>
+          <li class="aside-form__item"><label for= "green">Green</label><input type="checkbox" name="green" value="Green" id="green"></li>
+          <li class="aside-form__item"><label for= "white">White</label><input type="checkbox" name="white" value="White" id="white"></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="aside-form__title">Delivery</h3>
+        <ul class="aside-form__list">
+          <li class="aside-form__item"><label for= "free">Free shipping</label><input type="radio" name="delivery" value="free" id="free"></li>
+          <li class="aside-form__item"><label for= "fast">Fast shipping</label><input type="radio" name="delivery" value="fast" id="fast"></li>
+        </ul>
+      </div>
+      <div class="amount">
+        <h3 class="amount__title">Amount</h3>
+        <ul class="amount__list">
+          <li class="amount__item">0-5</li>
+          <li class="amount__item">10-20</li>
+          <li class="amount__item">10-20</li>
+        </ul>
+      </div>
+      <input type="submit" value="Apply" class="aside-form__button">
+    </form>
+
+    <h1>Toy for kids</h1>
+    <ul class="nav-list">
+      <li class="nav-list__item"><a href="index.html">Home</a></li>
+      <li class="nav-list__item"><a href="catalog.html">Catalog</a></li>
+      <li class="nav-list__item_active"><a href="catalog.html">Toys</a></li>
+    </ul>
+
+    <section>
+     <h2>Products</h2>
+      <ul class="products">
+        <li class="products__item">
+          <a href="#">
+            <img src="pic/toy_sharky.png" alt="toy_sharky"></a>
+          <p class="products__name">SHARKY BEAN BAG CHAIR COVER</p>
+          <p class="products__price">$60.00 USD</p>
+        </li>
+        <li class="products__item">
+          <a href="#">
+            <img src="pic/brass.png" alt="brass"></a>
+          <p class="products__name">BRASS DECO FRAMES</p>
+          <p class="products__price">$66.00 USD</p>
+        </li>
+        <li class="products__item">
+          <a href="#">
+            <img src="pic/cibo.png" alt="cibo"></a>
+          <p class="products__name">CIBO FULL APRON</p>
+          <p class="products__price">$60.00 USD</p>
+        </li>
+        <li class="products__item">
+          <a href="#">
+            <img src="pic/gatcha.png" alt="gatcha"></a>
+          <p class="products__name">GATCHA GATCHA GUMBALL MACHINE</p>
+          <p class="products__price">$56.00 USD</p>
+        </li>
+        <li class="products__item">
+          <a href="#">
+            <img src="pic/christams.png" alt="cristmas"></a>
+          <p class="products__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
+          <p class="products__price">$29.00 USD</p>
+        </li>
+        <li class="products__item">
+          <a href="#">
+            <img src="pic/tangle.png" alt="tangle"></a>
+          <p class="products__name">TANGLE SPINNING TEA LIGHT</p>
+          <p class="products__price">$56.00 USD</p>
+        </li>
+      </ul>
+      <div class="pages">
+      <button class="pages__button_left"></button>
+      <ul class="pages__list">
+        <li class="pages__item_active"><a href="">1</a></li>
+        <li class="pages__item"><a href="">2</a></li>
+        <li class="pages__item"><a href="">3</a></li>
+        <li class="pages__item"><a href="">4</a></li>
+      </ul>
+      <button class="pages__button_right"></button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav>
+      <div class="aside">
+        <h3 class="aside__title">Navigation</h3>
+        <!--line-->
+        <ul class="aside__list">
+          <li class="aside__item"><a href="#">About Us</a></li>
+          <li class="aside__item"><a href="#">Blog</a></li>
+          <li class="aside__item"><a href="#">Design Services</a></li>
+          <li class="aside__item"><a href="#">Featured On</a></li>
+          <li class="aside__item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="aside__item"><a href="#">Shop By Designer</a></li>
+        </ul>
+      </div>
+      <div class="aside">
+        <h3 class="aside__title">Customer Information</h3>
+        <!--line-->
+        <ul class="aside__list">
+          <li class="aside__item"><a href="#">Contact Us</a></li>
+          <li class="aside__item"><a href="#">Sale Exclusions</a></li>
+          <li class="aside__item"><a href="#">Shipping & Returns</a></li>
+          <li class="aside__item"><a href="#">Terms & Conditions</a></li>
+          <li class="aside__item"><a href="#">Privacy Policy</a></li>
+          <li class="aside__item"><a href="#">Search</a></li>
+        </ul>
+      </div>
+      <div class="aside">
+        <h3 class="aside__title">Connect</h3>
+        <!--line-->
+        <form class="form" action="#">
+          <input class="form__email" type="text" value="Email">
+          <input class="form__submit" type="submit" value="join">
+        </form>
+        <ul class="social">
+          <li><a href="#" class="social__link"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
+          <li><a href="#" class="social__link"><img src="pic/Twitter.png" alt="logo_twitter"></a></li>
+          <li><a href="#" class="social__link"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
+          <li><a href="#" class="social__link"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--line-->
+    <div>
+      <p class="footer__copyright">Company Rating</p>
+      <ul class="footer__rating">
+        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
+        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
+        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
+        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
+        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
+      </ul>
+    </div>
+    <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+    <a href="#" class="footer__copyright_dark">Web Design — Direct Line Development</a>
+  </footer>
+</body>
+
+</html>

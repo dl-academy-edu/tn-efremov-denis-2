@@ -1,0 +1,36 @@
+.products__name{
+  font-size: 14px;
+  line-height: 19px;
+}
+.products__price{
+font-weight: 700;
+line-height: 22px;
+}
+
+.pages__button_left{
+  width: 13px;
+  height: 26px;
+  background-image: url(../pic/pages_arrow_left.png);
+  background-color: transparent;
+}
+
+.pages__button_right{
+  width: 13px;
+  height: 26px;
+  background-image: url(../pic/pages_arrow_right.png);
+  background-color: transparent;
+}
+
+.pages__item{ 
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+}
+.pages__item a{
+  color: #1E0606;
+}
+.pages__item_active a{
+  color: #C29974;
+}
