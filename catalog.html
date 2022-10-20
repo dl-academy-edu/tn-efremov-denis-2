@@ -9,17 +9,17 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header wrapper">
     <a href="index.html"><img class="logo" src="pic/logo.png" alt="logo"></a>
     <nav class="header__menu">
-      <ul class="header__list">
-        <li class="header__item"><a href="#">Blog</a></li>
-        <li class="header__item"><a href="catalog.html">Catalog</a></li>
-        <li class="header__item"><a href="#">About Us</a></li>
-      </ul>
+    <ul class="header__list">
+      <li class="header__item"><a href="blog.html">Blog</a></li>
+      <li class="header__item"><a href="catalog.html">Catalog</a></li>
+      <li class="header__item"><a href="#">About Us</a></li>
+    </ul>
     </nav>
     <button class="header__search"></button>
-    <div class="header__contact"><a href="#" >Contact Us</a></div>
+    <a href="#" class="header__contact">Contact Us</a>
   </header>
   <main>
     <h1>Category Products</h1>
@@ -27,6 +27,7 @@
       <li class="nav-list__item"><a  href="index.html">Home</a></li>
       <li class="nav-list__item_active"><a  href="catalog.html">Catalog</a></li>
     </ul>
+    <section class="category">
     <ul class="category__list">
       <li class="category__item category_kids"><a href="#">
           <!--tshort-->APPAREL KIDS
@@ -47,12 +48,12 @@
           <!--dress-->APPAREL ADULTS
         </a></li>
     </ul>
-    <article class="product-description">
-      <h2>Product Description</h2>
-      <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-      <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-      <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-    </article>
+  
+      <h2 class="category__caption">Product Description</h2>
+      <p class="category__description">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+      <p class="category__description">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+      <p class="category__description">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    </section>
   </main>
   <footer class="footer">
     <nav>

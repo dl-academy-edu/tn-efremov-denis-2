@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -14,6 +18,24 @@ ul {
   list-style-type: none;
 }
 
+.title_bigger {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title_smaller {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 button {
   border: 0;
 }
@@ -24,13 +46,35 @@ button {
   background-color: #000000;
   border: 0;
   text-transform: uppercase;
+  margin: 0;
+  padding: 9px 22px 9px 22px;
+  display: inline-block;
 }
 
+.wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.header__menu{
+  margin: 0 auto 0 60px;
+}
+.header__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 .header__item a {
-  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
+  margin-right: 20px;
 }
 
 .header__search {
@@ -40,41 +84,33 @@ button {
   background-color: transparent;
 }
 
-.header__contact a {
+.header__contact {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   color: #1E0606;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 49px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  text-transform: uppercase;
+  margin-left: 24px;
 }
 
 .category__item {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  Line-height 32px;
-  text-transform: uppercase;
-  height: 280px;
-  width: 270px;
+  height: 270px;
+  width: 280px;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .category__item a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px; 
+  Line-height: 32px;
+  text-transform: uppercase;
   color: #FFFFFF;
+  display: block;
+  margin: auto;
+  max-width: 72%;
+  text-align: center;
 }
 
 .category_kids {
@@ -107,7 +143,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.category_adults{
+.category_adults {
   background-image: url(../pic/dress.png);
   background-color: #E5EAF8;
   background-repeat: no-repeat;
@@ -130,19 +166,49 @@ h2 {
   color: #A2A2A2;
 }
 
-.nav-list__item a{
-font-family: 'Crimson Text';
-font-style: italic;
-font-size: 20px;
-line-height: 26px;
-color: #1E0606;
+.nav-list__item a {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 20px;
+  line-height: 26px;
+  color: #1E0606;
 }
 
-.nav-list__item_active a{
-font-family: 'Crimson Text';
-font-style: italic;
-font-size: 20px;
-line-height: 26px;
-color: #E5E5E5;;
+.nav-list__item_active a {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E5E5E5;
+  ;
 }
 
+.pages__button_left {
+  width: 13px;
+  height: 26px;
+  background-image: url(../pic/pages_arrow_left.png);
+  background-color: transparent;
+}
+
+.pages__button_right {
+  width: 13px;
+  height: 26px;
+  background-image: url(../pic/pages_arrow_right.png);
+  background-color: transparent;
+}
+
+.pages__item {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.pages__item a {
+  color: #1E0606;
+}
+
+.pages__item_active a {
+  color: #C29974;
+}

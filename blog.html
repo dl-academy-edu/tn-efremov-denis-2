@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Toys</title>
+  <title>Blog</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/toys.css">
+  <link rel="stylesheet" href="css/blog.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,84 +25,44 @@
     <button class="header__search"></button>
     <a href="#" class="header__contact">Contact Us</a>
   </header>
- <main>
-    <form class="aside-form">
-      <div>
-        <h3 class="aside-form__title">Cost</h3>
-        <input type="range" min="0" max="500" value="100">
-      </div>
-      <div>
-        <h3 class="aside-form__title">Color</h3>
-        <ul class="aside-form__list">
-          <li class="aside-form__item"><label for= "black">Black</label><input type="checkbox" name="black" value="Black" id="black" checked></li>
-          <li class="aside-form__item"><label for= "blue">Blue</label><input type="checkbox" name="blue" value="Blue" id="blue"></li>
-          <li class="aside-form__item"><label for= "green">Green</label><input type="checkbox" name="green" value="Green" id="green"></li>
-          <li class="aside-form__item"><label for= "white">White</label><input type="checkbox" name="white" value="White" id="white"></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="aside-form__title">Delivery</h3>
-        <ul class="aside-form__list">
-          <li class="aside-form__item"><label for= "free">Free shipping</label><input type="radio" name="delivery" value="free" id="free"></li>
-          <li class="aside-form__item"><label for= "fast">Fast shipping</label><input type="radio" name="delivery" value="fast" id="fast"></li>
-        </ul>
-      </div>
-      <div class="amount">
-        <h3 class="amount__title">Amount</h3>
-        <ul class="amount__list">
-          <li class="amount__item">0-5</li>
-          <li class="amount__item">10-20</li>
-          <li class="amount__item">10-20</li>
-        </ul>
-      </div>
-      <input type="submit" value="Apply" class="aside-form__button">
-    </form>
-
-    <h1>Toy for kids</h1>
+  <main>
+    <h1>Blog</h1>
     <ul class="nav-list">
       <li class="nav-list__item"><a href="index.html">Home</a></li>
-      <li class="nav-list__item"><a href="catalog.html">Catalog</a></li>
-      <li class="nav-list__item_active"><a href="catalog.html">Toys</a></li>
+      <li class="nav-list__item_active"><a href="blog.html">Blog</a></li>
     </ul>
-
-    <section class="products">
-     <h2 class="hidden">Products</h2>
-      <ul class="products__list">
-        <li class="products__item">
-          <a href="#">
-            <img src="pic/toy_sharky.png" alt="toy_sharky"></a>
-          <p class="products__name">SHARKY BEAN BAG CHAIR COVER</p>
-          <p class="products__price">$60.00 USD</p>
+    <section class="articles">
+      <h2 class="hidden">artictles</h2>
+      <ul class="articles__list">
+        <li articles__item><img src="pic/article1.jpg" alt="small toys" class="articles__img">
+          <p class="articles__date">23rd August 2018</p>
+          <p class="articles__title">Top 5 fastest growing it service companies in philly</p>
+          <p class="articles__content">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
         </li>
-        <li class="products__item">
-          <a href="#">
-            <img src="pic/brass.png" alt="brass"></a>
-          <p class="products__name">BRASS DECO FRAMES</p>
-          <p class="products__price">$66.00 USD</p>
+        <li articles__item><img src="pic/article2.jpg" alt="bears" class="articles__img">
+          <p class="articles__date">23rd August 2018</p>
+          <p class="articles__title">Best financial</p>
+          <p class="articles__content">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
         </li>
-        <li class="products__item">
-          <a href="#">
-            <img src="pic/cibo.png" alt="cibo"></a>
-          <p class="products__name">CIBO FULL APRON</p>
-          <p class="products__price">$60.00 USD</p>
+        <li articles__item><img src="pic/article3.jpg" alt="lego_toys" class="articles__img">
+          <p class="articles__date">23rd August 2018</p>
+          <p class="articles__title">Company logo or brand identity: which one is more important? brand identity</p>
+          <p class="articles__content">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
         </li>
-        <li class="products__item">
-          <a href="#">
-            <img src="pic/gatcha.png" alt="gatcha"></a>
-          <p class="products__name">GATCHA GATCHA GUMBALL MACHINE</p>
-          <p class="products__price">$56.00 USD</p>
+        <li articles__item><img src="pic/article4.jpg" alt="soldier_toy" class="articles__img">
+          <p class="articles__date">23rd August 2018</p>
+          <p class="articles__title">Best financial</p>
+          <p class="articles__content">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
+        <li articles__item><img src="pic/article5.jpg" alt="rapuncel_toy" class="articles__img">
+          <p class="articles__date">23rd August 2018</p>
+          <p class="articles__title">Company logo or brand identity: which one is more important? brand identity</p>
+          <p class="articles__content">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
         </li>
-        <li class="products__item">
-          <a href="#">
-            <img src="pic/christams.png" alt="cristmas"></a>
-          <p class="products__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
-          <p class="products__price">$29.00 USD</p>
-        </li>
-        <li class="products__item">
-          <a href="#">
-            <img src="pic/tangle.png" alt="tangle"></a>
-          <p class="products__name">TANGLE SPINNING TEA LIGHT</p>
-          <p class="products__price">$56.00 USD</p>
+        <li articles__item><img src="pic/article6.jpg" alt="stones" class="articles__img">
+          <p class="articles__date">23rd August 2018</p>
+          <p class="articles__title">Top 5 fastest growing it service companies in philly</p>
+          <p class="articles__content">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.
+          </p>
         </li>
       </ul>
       <div class="pages">
@@ -144,7 +108,7 @@
         <!--line-->
         <form class="form" action="#">
           <input class="form__email" type="text" value="Email">
-          <input class="form__submit" type="submit" value="join">
+          <input class="button" type="submit" value="join">
         </form>
         <ul class="social">
           <li><a href="#" class="social__link"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
