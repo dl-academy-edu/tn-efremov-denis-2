@@ -12,35 +12,35 @@
   <header class="header wrapper">
     <a href="index.html"><img class="logo" src="pic/logo.png" alt="logo"></a>
     <nav class="header__menu">
-    <ul class="header__list">
-      <li class="header__item"><a href="blog.html">Blog</a></li>
-      <li class="header__item"><a href="catalog.html">Catalog</a></li>
-      <li class="header__item"><a href="#">About Us</a></li>
-    </ul>
+      <ul class="header__list">
+        <li class="header__item"><a href="blog.html">Blog</a></li>
+        <li class="header__item"><a href="catalog.html">Catalog</a></li>
+        <li class="header__item"><a href="#">About Us</a></li>
+      </ul>
     </nav>
     <button class="header__search"></button>
     <a href="#" class="header__contact">Contact Us</a>
   </header>
- <main>
-    <form class="aside-form">
+  <main>
+    <div class="aside">
       <div>
-        <h3 class="aside-form__title">Cost</h3>
+        <h3 class="aside__title">Cost</h3>
         <input type="range" min="0" max="500" value="100">
       </div>
       <div>
-        <h3 class="aside-form__title">Color</h3>
-        <ul class="aside-form__list">
-          <li class="aside-form__item"><label for= "black">Black</label><input type="checkbox" name="black" value="Black" id="black" checked></li>
-          <li class="aside-form__item"><label for= "blue">Blue</label><input type="checkbox" name="blue" value="Blue" id="blue"></li>
-          <li class="aside-form__item"><label for= "green">Green</label><input type="checkbox" name="green" value="Green" id="green"></li>
-          <li class="aside-form__item"><label for= "white">White</label><input type="checkbox" name="white" value="White" id="white"></li>
+        <h3 class="aside__title">Color</h3>
+        <ul class="aside__list">
+          <li class="aside__item"><label for="black">Black</label><input type="checkbox" name="black" value="Black" id="black" checked></li>
+          <li class="aside__item"><label for="blue">Blue</label><input type="checkbox" name="blue" value="Blue" id="blue"></li>
+          <li class="aside__item"><label for="green">Green</label><input type="checkbox" name="green" value="Green" id="green"></li>
+          <li class="aside__item"><label for="white">White</label><input type="checkbox" name="white" value="White" id="white"></li>
         </ul>
       </div>
       <div>
-        <h3 class="aside-form__title">Delivery</h3>
-        <ul class="aside-form__list">
-          <li class="aside-form__item"><label for= "free">Free shipping</label><input type="radio" name="delivery" value="free" id="free"></li>
-          <li class="aside-form__item"><label for= "fast">Fast shipping</label><input type="radio" name="delivery" value="fast" id="fast"></li>
+        <h3 class="aside__title">Delivery</h3>
+        <ul class="aside__list">
+          <li class="aside__item"><label for="free">Free shipping</label><input type="radio" name="delivery" value="free" id="free"></li>
+          <li class="aside__item"><label for="fast">Fast shipping</label><input type="radio" name="delivery" value="fast" id="fast"></li>
         </ul>
       </div>
       <div class="amount">
@@ -51,8 +51,8 @@
           <li class="amount__item">10-20</li>
         </ul>
       </div>
-      <input type="submit" value="Apply" class="aside-form__button">
-    </form>
+      <input type="submit" value="Apply" class="aside__button">
+    </div>
 
     <h1>Toy for kids</h1>
     <ul class="nav-list">
@@ -62,7 +62,7 @@
     </ul>
 
     <section class="products">
-     <h2 class="hidden">Products</h2>
+      <h2 class="hidden">Products</h2>
       <ul class="products__list">
         <li class="products__item">
           <a href="#">
@@ -102,71 +102,69 @@
         </li>
       </ul>
       <div class="pages">
-      <button class="pages__button_left"></button>
-      <ul class="pages__list">
-        <li class="pages__item_active"><a href="">1</a></li>
-        <li class="pages__item"><a href="">2</a></li>
-        <li class="pages__item"><a href="">3</a></li>
-        <li class="pages__item"><a href="">4</a></li>
-      </ul>
-      <button class="pages__button_right"></button>
+        <button class="pages__button_left"></button>
+        <ul class="pages__list">
+          <li class="pages__item_active"><a href="">1</a></li>
+          <li class="pages__item"><a href="">2</a></li>
+          <li class="pages__item"><a href="">3</a></li>
+          <li class="pages__item"><a href="">4</a></li>
+        </ul>
+        <button class="pages__button_right"></button>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <nav>
-      <div class="aside">
-        <h3 class="aside__title">Navigation</h3>
-        <!--line-->
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">About Us</a></li>
-          <li class="aside__item"><a href="#">Blog</a></li>
-          <li class="aside__item"><a href="#">Design Services</a></li>
-          <li class="aside__item"><a href="#">Featured On</a></li>
-          <li class="aside__item"><a href="#">2018 Holiday Catalog</a></li>
-          <li class="aside__item"><a href="#">Shop By Designer</a></li>
+    <nav class=footer__nav>
+      <section class="footer__section">
+        <h3 class="footer-section__title">Navigation</h3>
+        <div class="footer__line_short"></div>
+        <ul class="footer-section__list">
+          <li class="footer-section__item"><a href="#">About Us</a></li>
+          <li class="footer-section__item"><a href="#">Blog</a></li>
+          <li class="footer-section__item"><a href="#">Design Services</a></li>
+          <li class="footer-section__item"><a href="#">Featured On</a></li>
+          <li class="footer-section__item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="footer-section__item"><a href="#">Shop By Designer</a></li>
         </ul>
-      </div>
-      <div class="aside">
-        <h3 class="aside__title">Customer Information</h3>
-        <!--line-->
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">Contact Us</a></li>
-          <li class="aside__item"><a href="#">Sale Exclusions</a></li>
-          <li class="aside__item"><a href="#">Shipping & Returns</a></li>
-          <li class="aside__item"><a href="#">Terms & Conditions</a></li>
-          <li class="aside__item"><a href="#">Privacy Policy</a></li>
-          <li class="aside__item"><a href="#">Search</a></li>
+      </section>
+      <section class="footer__section">
+        <h3 class="footer-section__title">Customer Information</h3>
+        <div class="footer__line_short"></div>
+        <ul class="footer-section__list">
+          <li class="footer-section__item"><a href="#">Contact Us</a></li>
+          <li class="footer-section__item"><a href="#">Sale Exclusions</a></li>
+          <li class="footer-section__item"><a href="#">Shipping & Returns</a></li>
+          <li class="footer-section__item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer-section__item"><a href="#">Privacy Policy</a></li>
+          <li class="footer-section__item"><a href="#">Search</a></li>
         </ul>
-      </div>
-      <div class="aside">
-        <h3 class="aside__title">Connect</h3>
-        <!--line-->
-        <form class="form" action="#">
-          <input class="form__email" type="text" value="Email">
-          <input class="form__submit" type="submit" value="join">
+      </section>
+      <section class="footer__section">
+        <h3 class="footer-section__title">Connect</h3>
+        <div class="footer__line_short"></div>
+        <form class="footer__form" action="#">
+          <input class="footer-form__email" type="email" value="Email"><input class="button" type="submit" value="join">
         </form>
-        <ul class="social">
-          <li><a href="#" class="social__link"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
-          <li><a href="#" class="social__link"><img src="pic/Twitter.png" alt="logo_twitter"></a></li>
-          <li><a href="#" class="social__link"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
-          <li><a href="#" class="social__link"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
+        <ul class="footer__socials">
+          <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
+          <li class="footer-socials__item"><a href="#"><img src="pic/Twitter.png" alt="logo_twitter"></a></li>
+          <li class="footer-socials__item"><a href="#"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
+          <li class="footer-socials__item"><a href="#"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
         </ul>
-      </div>
+      </section>
     </nav>
-    <!--line-->
-    <div>
-      <p class="footer__copyright">Company Rating</p>
-      <ul class="footer__rating">
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-      </ul>
-    </div>
-    <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-    <a href="#" class="footer__copyright_dark">Web Design — Direct Line Development</a>
+    <div class="footer__line_long"></div>
+    <section class="footer__author-block">
+      <h2 class="hidden">about author</h2>
+      <div>
+        <p class="footer__author-rating">Company Rating</p>
+      </div>
+      <div>
+        <p>Copyright © 2018 Dlk • Design Life Kids</p>
+      </div>
+      <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
+      </div>
+    </section>
   </footer>
 </body>
 

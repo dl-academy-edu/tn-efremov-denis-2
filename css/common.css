@@ -14,8 +14,18 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title_bigger {
@@ -24,7 +34,6 @@ ul {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .title_smaller {
@@ -33,11 +42,11 @@ ul {
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 button {
   border: 0;
+  cursor: pointer;
 }
 
 .button {
@@ -55,115 +64,6 @@ button {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
-}
-
-.header{
-  display: flex;
-  align-items: center;
-}
-
-.header__menu{
-  margin: 0 auto 0 60px;
-}
-.header__list{
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-.header__item a {
-  font-size: 14px;
-  line-height: 19px;
-  color: #1E0606;
-  margin-right: 20px;
-}
-
-.header__search {
-  width: 17px;
-  height: 17px;
-  background-image: url(../pic/loupe.png);
-  background-color: transparent;
-}
-
-.header__contact {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  color: #1E0606;
-  margin-left: 24px;
-}
-
-.category__item {
-  height: 270px;
-  width: 280px;
-  background-position: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.category__item a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 26px; 
-  Line-height: 32px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  display: block;
-  margin: auto;
-  max-width: 72%;
-  text-align: center;
-}
-
-.category_kids {
-  background-image: url(../pic/tshort.png);
-  background-color: #DBE4DB;
-  background-repeat: no-repeat;
-}
-
-.category_holiday {
-  background-image: url(../pic/socks.png);
-  background-color: #EADDD3;
-  background-repeat: no-repeat;
-}
-
-.category_toys {
-  background-image: url(../pic/deer.png);
-  background-color: #F8F2DA;
-  background-repeat: no-repeat;
-}
-
-.category_accessories {
-  background-image: url(../pic/troll.png);
-  background-color: #D5D4E1;
-  background-repeat: no-repeat;
-}
-
-.category_sale {
-  background-image: url(../pic/flamingo.png);
-  background-color: #F3D0DB;
-  background-repeat: no-repeat;
-}
-
-.category_adults {
-  background-image: url(../pic/dress.png);
-  background-color: #E5EAF8;
-  background-repeat: no-repeat;
-}
-
-.footer {
-  background-color: #434343;
-}
-
-.aside__title {
-  color: #AAAAAA;
-}
-
-.aside__item a,
-.footer__copyright {
-  color: #FFFFFF;
-}
-
-.footer__copyright_dark {
-  color: #A2A2A2;
 }
 
 .nav-list__item a {
@@ -211,4 +111,195 @@ button {
 
 .pages__item_active a {
   color: #C29974;
+}
+
+.hidden {
+  font-size: 0;
+  line-height: 0;
+}
+
+
+/*header*/
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  margin: 0 auto 0 60px;
+}
+
+.header__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header__item a {
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  margin-right: 20px;
+}
+
+.header__search {
+  width: 17px;
+  height: 17px;
+  background-image: url(../pic/loupe.png);
+  background-color: transparent;
+}
+
+.header__contact {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #1E0606;
+  margin-left: 24px;
+}
+
+/*category*/
+
+.category__item {
+  height: 270px;
+  width: 280px;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category__item a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  Line-height: 32px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: block;
+  margin: auto;
+  max-width: 72%;
+  text-align: center;
+}
+
+.category_kids {
+  background-image: url(../pic/tshort.png);
+  background-color: #DBE4DB;
+  background-repeat: no-repeat;
+}
+
+.category_holiday {
+  background-image: url(../pic/socks.png);
+  background-color: #EADDD3;
+  background-repeat: no-repeat;
+}
+
+.category_toys {
+  background-image: url(../pic/deer.png);
+  background-color: #F8F2DA;
+  background-repeat: no-repeat;
+}
+
+.category_accessories {
+  background-image: url(../pic/troll.png);
+  background-color: #D5D4E1;
+  background-repeat: no-repeat;
+}
+
+.category_sale {
+  background-image: url(../pic/flamingo.png);
+  background-color: #F3D0DB;
+  background-repeat: no-repeat;
+}
+
+.category_adults {
+  background-image: url(../pic/dress.png);
+  background-color: #E5EAF8;
+  background-repeat: no-repeat;
+}
+
+
+/*footer*/
+
+.footer {
+  background-color: #434343;
+  padding: 100px 110px 100px 110px;
+  
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 13px;
+}
+
+.footer-section__title {
+  color: #AAAAAA;
+}
+
+.footer__line_short {
+  width: 380px;
+  height: 1px;
+  background-color: #666666;
+  margin: 23px 0 0 0;
+}
+
+.footer-section__list {
+  margin-top: 28px;
+}
+
+.footer-section__item {
+  margin-bottom: 15px;
+}
+
+.footer-form__email {
+  padding: 9px 0 9px 15px;
+  margin: 25px 0 0 0;
+  border: 0;
+  width: 299px;
+  background-color: #666666;
+  color: #EBEBEB;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer-socials__item {
+  margin: 25px 10px 0 0;
+}
+
+.footer__line_long {
+  height: 1px;
+  background-color: #666666;
+  display: block;
+
+}
+
+.footer-section__item a{
+  color: #FFFFFF;
+}
+
+.footer__author-block{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 23px 0 0 0;
+  color: #FFFFFF;
+}
+.footer__author-block div{
+  width: 380px;
+}
+.footer__author-rating::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../pic/stars.png);
+  height: 16px;
+  width: 97px;
+  margin-left: 25px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+.footer__author-link_dark {
+  color: #A2A2A2;
 }

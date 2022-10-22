@@ -28,27 +28,27 @@
   <main>
     <section class="banner wrapper">
       <div class="banner__background">
-      <p class="banner__number">01</p>
-      <div class="banner__wrapper">
-        <div class="banner__buttons">
-          <button class="banner__buttons-item_active" ></button>
-          <button class="banner__buttons-item"></button>
-          <button class="banner__buttons-item"></button>
-          <button class="banner__buttons-item" ></button>
+        <p class="banner__number">01</p>
+        <div class="banner__wrapper">
+          <div class="banner__buttons">
+            <button class="banner__buttons-item_active"></button>
+            <button class="banner__buttons-item"></button>
+            <button class="banner__buttons-item"></button>
+            <button class="banner__buttons-item"></button>
+          </div>
+          <div class="banner__text">
+            <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
+            <p class="banner__text_italic">Designed in Slovenia</p>
+            <a href="#" class='button'>EXPLORE NOW</a>
+          </div>
+          <img class="banner__img" src="pic/monstr.png" alt="baner">
         </div>
-        <div class="banner__text">
-        <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
-        <p class="banner__text_italic">Designed in Slovenia</p>
-        <a href="#" class='button'>EXPLORE NOW</a>
-        </div>
-      <img class="banner__img" src="pic/monstr.png" alt="baner"> 
+        <p class="banner__text_bottom">Free (continental) USA shipping on all orders of $100 USD or more!</p>
       </div>
-      <p class="banner__text_bottom">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-      </div>
-  
+
     </section>
     <section class="category wrapper">
-      <h2 class="title_smaller">Category Products</h2>
+      <h2 class="title_smaller category__title">Category Products</h2>
       <ul class="category__list">
         <li class="category__item category_kids"><a href="#">
             APPAREL KIDS
@@ -64,29 +64,40 @@
           </a></li>
       </ul>
       <div class="category__nav">
-      <button class="category-nav__button_left"></button>
-      <button class="category-nav__button_right"></button>
-      <p class="category-nav__description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        <button class="category-nav__button_left"></button>
+        <button class="category-nav__button_right"></button>
+        <p class="category-nav__description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
       </div>
     </section>
     <section class="delivery wrapper">
+     <h2 class="hidden">delivery content</h2>
       <img class="delivery__img" src="pic/woman.jpg" alt="woman">
-      <div class="delivery__text">
-      <h2 class="title_smaller">Delivery</h2>
-      <div class="delivery__list-buttons">
-        <button class="delivery__item_active">Delivery</button>
-        <button class="delivery__item">Guarantee</button>
-        <button class="delivery__item">Credit</button>
-      </div>
-      <div class="delivery__content">
-      <p >Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-      <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-      </div>
-      <a href="#" class='button'>LEARN MORE</a>
-      </div>
+      <section class="delivery__text">
+        <input type="radio" name="delivery_tab" id="delivery_tab1" checked>
+        <label for="delivery_tab1">Delivery</label>
+        <input type="radio" name="delivery_tab" id="delivery_tab2">
+        <label for="delivery_tab2">Guarantee</label><input type="radio" name="delivery_tab" id="delivery_tab3">
+        <label for="delivery_tab3">Credit</label>
+        <h2 class="title_smaller" id="tab_title1">Delivery</h2>
+        <h2 class="title_smaller" id="tab_title2">Guarantee</h2>
+        <h2 class="title_smaller" id="tab_title3">Credit</h2>
+        <div class="delivery__content" id="tab_content1">
+          <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+          <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+        </div>
+        <div class="delivery__content" id="tab_content2">
+          <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+          <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+        </div>
+        <div class="delivery__content" id="tab_content3">
+          <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+          <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+        </div>
+        <a href="#" class='button'>LEARN MORE</a>
+      </section>
     </section>
     <article class="sponsors wrapper">
-      <h3>sponsors</h3>
+      <h3 class="hidden">sponsors</h3>
       <ul class="sponsors__list">
         <li class="sponsors__item"><a href=""><img src="pic/mail_logo.png" alt="logo_mail_ru"></a></li>
         <li class="sponsors__item"><a href=""><img src="pic/apple_logo.png" alt="logo_apple"></a></li>
@@ -97,74 +108,72 @@
     <section class="container wrapper">
       <h2 class="hidden">Conteiners</h2>
       <section class="container_left">
-        <h2 class="container__title">Design Life Kids</h2>
+        <h2 class="title_smaller container__title">Design Life Kids</h2>
         <p class="container__caption">About Us</p>
         <p class="container__content">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. </p>
         <a href="#" class='button'>buy now</a>
       </section>
       <section class="container_right">
-        <h2 class="container__title">Contacts</h2>
+        <h2 class="title_smaller container__title">Contacts</h2>
         <p class="container__content">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+        <div class="map">
+          <img src="pic/map.jpg" alt="map">
+        </div>
       </section>
-      <div class="map">
-        <img src="pic/map.jpg" alt="map">
-      </div>
     </section>
   </main>
   <footer class="footer">
-    <nav>
-      <div class="aside">
-        <h3 class="aside__title">Navigation</h3>
-        <!--line-->
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">About Us</a></li>
-          <li class="aside__item"><a href="#">Blog</a></li>
-          <li class="aside__item"><a href="#">Design Services</a></li>
-          <li class="aside__item"><a href="#">Featured On</a></li>
-          <li class="aside__item"><a href="#">2018 Holiday Catalog</a></li>
-          <li class="aside__item"><a href="#">Shop By Designer</a></li>
+    <nav class=footer__nav>
+      <section class="footer__section">
+        <h3 class="footer-section__title">Navigation</h3>
+        <div class="footer__line_short"></div>
+        <ul class="footer-section__list">
+          <li class="footer-section__item"><a href="#">About Us</a></li>
+          <li class="footer-section__item"><a href="#">Blog</a></li>
+          <li class="footer-section__item"><a href="#">Design Services</a></li>
+          <li class="footer-section__item"><a href="#">Featured On</a></li>
+          <li class="footer-section__item"><a href="#">2018 Holiday Catalog</a></li>
+          <li class="footer-section__item"><a href="#">Shop By Designer</a></li>
         </ul>
-      </div>
-      <div class="aside">
-        <h3 class="aside__title">Customer Information</h3>
-        <!--line-->
-        <ul class="aside__list">
-          <li class="aside__item"><a href="#">Contact Us</a></li>
-          <li class="aside__item"><a href="#">Sale Exclusions</a></li>
-          <li class="aside__item"><a href="#">Shipping & Returns</a></li>
-          <li class="aside__item"><a href="#">Terms & Conditions</a></li>
-          <li class="aside__item"><a href="#">Privacy Policy</a></li>
-          <li class="aside__item"><a href="#">Search</a></li>
+      </section>
+      <section class="footer__section">
+        <h3 class="footer-section__title">Customer Information</h3>
+        <div class="footer__line_short"></div>
+        <ul class="footer-section__list">
+          <li class="footer-section__item"><a href="#">Contact Us</a></li>
+          <li class="footer-section__item"><a href="#">Sale Exclusions</a></li>
+          <li class="footer-section__item"><a href="#">Shipping & Returns</a></li>
+          <li class="footer-section__item"><a href="#">Terms & Conditions</a></li>
+          <li class="footer-section__item"><a href="#">Privacy Policy</a></li>
+          <li class="footer-section__item"><a href="#">Search</a></li>
         </ul>
-      </div>
-      <div class="aside">
-        <h3 class="aside__title">Connect</h3>
-        <!--line-->
-        <form class="form" action="#">
-          <input class="form__email" type="text" value="Email">
-          <input class="button" type="submit" value="join">
+      </section>
+      <section class="footer__section">
+        <h3 class="footer-section__title">Connect</h3>
+        <div class="footer__line_short"></div>
+        <form class="footer__form" action="#">
+          <input class="footer-form__email" type="email" value="Email"><input class="button" type="submit" value="join">
         </form>
-        <ul class="social">
-          <li><a href="#" class="social__link"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
-          <li><a href="#" class="social__link"><img src="pic/Twitter.png" alt="logo_twitter"></a></li>
-          <li><a href="#" class="social__link"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
-          <li><a href="#" class="social__link"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
+        <ul class="footer__socials">
+          <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
+          <li class="footer-socials__item"><a href="#"><img src="pic/Twitter.png" alt="logo_twitter"></a></li>
+          <li class="footer-socials__item"><a href="#"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
+          <li class="footer-socials__item"><a href="#"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
         </ul>
-      </div>
+      </section>
     </nav>
-    <!--line-->
-    <div>
-      <p class="footer__copyright">Company Rating</p>
-      <ul class="footer__rating">
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-        <li class="footer__star"><img src="pic/Star.png" alt="star"></li>
-      </ul>
-    </div>
-    <p class="footer__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
-    <a href="#" class="footer__copyright_dark">Web Design — Direct Line Development</a>
+    <div class="footer__line_long"></div>
+    <section class="footer__author-block">
+     <h2 class="hidden">about author</h2>
+      <div>
+        <p class="footer__author-rating">Company Rating</p>
+      </div>
+      <div>
+        <p>Copyright © 2018 Dlk • Design Life Kids</p>
+      </div>
+      <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
+      </div>
+    </section>
   </footer>
 </body>
 
