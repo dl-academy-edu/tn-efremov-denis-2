@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Blog</title>
+  <title>Contacts</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,56 +25,43 @@
     <button class="header__search"></button>
     <a href="#" class="header__contact">Contact Us</a>
   </header>
-  <main>
-    <h1 >Blog</h1>
-    <ul class="nav-list">
-      <li class="nav-list__item"><a href="index.html">Home</a></li>
-      <li class="nav-list__item_active"><a href="blog.html">Blog</a></li>
+  <main class="wrapper">
+    <h1 class="title_bigger">Contact Us</h1>
+    <ul class="pagination">
+      <li class="pagination__page"><a href="index.html">Home</a></li>
+      <li class="pagination__page_active"><a href="contact.html">Contact us</a></li>
     </ul>
-    <section class="articles">
-      <h3 class="hidden">artictles</h3>
-      <ul class="articles__list">
-        <li class="articles__item"><img src="pic/article1.jpg" alt="small toys" class="articles__img">
-          <p class="articles__date">23rd August 2018</p>
-          <p class="articles__title">Top 5 fastest growing it service companies in philly</p>
-          <p class="articles__content">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
-        </li>
-        <li class="articles__item"><img src="pic/article2.jpg" alt="bears" class="articles__img">
-          <p class="articles__date">23rd August 2018</p>
-          <p class="articles__title">Best financial</p>
-          <p class="articles__content">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-        </li>
-        <li class="articles__item"><img src="pic/article3.jpg" alt="lego_toys" class="articles__img">
-          <p class="articles__date">23rd August 2018</p>
-          <p class="articles__title">Company logo or brand identity: which one is more important? brand identity</p>
-          <p class="articles__content">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-        </li>
-        <li class="articles__item"><img src="pic/article4.jpg" alt="soldier_toy" class="articles__img">
-          <p class="articles__date">23rd August 2018</p>
-          <p class="articles__title">Best financial</p>
-          <p class="articles__content">Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
-        <li class="articles__item"><img src="pic/article5.jpg" alt="rapuncel_toy" class="articles__img">
-          <p class="articles__date">23rd August 2018</p>
-          <p class="articles__title">Company logo or brand identity: which one is more important? brand identity</p>
-          <p class="articles__content">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
-        </li>
-        <li class="articles__item"><img src="pic/article6.jpg" alt="stones" class="articles__img">
-          <p class="articles__date">23rd August 2018</p>
-          <p class="articles__title">Top 5 fastest growing it service companies in philly</p>
-          <p class="articles__content">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.
-          </p>
-        </li>
-      </ul>
-      <div class="pages">
-        <button class="pages__button_left"></button>
-        <ul class="pages__list">
-          <li class="pages__item_active"><a href="">1</a></li>
-          <li class="pages__item"><a href="">2</a></li>
-          <li class="pages__item"><a href="">3</a></li>
-          <li class="pages__item"><a href="">4</a></li>
-        </ul>
-        <button class="pages__button_right"></button>
+    <section class="contacts">
+    <h2 class="hidden">User contacts</h2>
+    <form class="contacts__form" action="#" method="post">
+      <div class="label__wrapper">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Ivan Ivanov">
       </div>
+      <div class="two-columns__wrapper">
+      <div class="label__wrapper">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone">
+      </div>
+      <div class="label__wrapper">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+      </div>
+      </div>
+      <div class="label-message__wrapper">
+       <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      </div>
+        <input type="checkbox" class="checkbox" id="check">
+        <label class="checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+      <button type="submit" class="button">Submit</button>
+    </form>
+    <section class="contacts__desc">
+     <h2 class="hidden">Contact description</h2>
+      <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+      <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+      <p class="contacts__desc_big">An expert is waiting to help you!</p>
+    </section>
     </section>
   </main>
   <footer class="footer">

@@ -6,6 +6,7 @@
   <title>Personal project</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
       </ul>
     </nav>
     <button class="header__search"></button>
-    <a href="#" class="header__contact">Contact Us</a>
+    <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
   <main>
     <section class="banner wrapper">
@@ -122,7 +123,7 @@
       </section>
     </section>
   </main>
-  <footer class="footer">
+ <footer class="footer">
     <nav class=footer__nav>
       <section class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
@@ -152,7 +153,7 @@
         <h3 class="footer-section__title">Connect</h3>
         <div class="footer__line_short"></div>
         <form class="footer__form" action="#">
-          <input class="footer-form__email" type="email" value="Email"><input class="button" type="submit" value="join">
+          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit" >Join</button>
         </form>
         <ul class="footer__socials">
           <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
@@ -164,17 +165,43 @@
     </nav>
     <div class="footer__line_long"></div>
     <section class="footer__author-block">
-     <h2 class="hidden">about author</h2>
+      <h2 class="hidden">about author</h2>
       <div>
         <p class="footer__author-rating">Company Rating</p>
       </div>
-      <div>
+      <div class="footer__copyright">
         <p>Copyright © 2018 Dlk • Design Life Kids</p>
       </div>
       <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
       </div>
     </section>
   </footer>
+  <div class="modal">
+     <form class="contacts__form" action="#" method="post">
+      <div class="label__wrapper">
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Ivan Ivanov">
+      </div>
+      <div class="two-columns__wrapper">
+      <div class="label__wrapper">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone">
+      </div>
+      <div class="label__wrapper">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+      </div>
+      </div>
+      <div class="label-message__wrapper">
+       <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      </div>
+        <input type="checkbox" class="checkbox" id="check">
+        <label class="checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+      <button type="submit" class="button">Submit</button>
+    </form>
+    <button class="modal__close"></button>
+  </div>
 </body>
 
 </html>
