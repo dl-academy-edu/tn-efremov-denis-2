@@ -5,7 +5,14 @@
   <meta charset="UTF-8">
   <title>Toys</title>
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/toys.css">
+  <link rel="stylesheet" href="css/range.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,105 +26,142 @@
       </ul>
     </nav>
     <button class="header__search"></button>
-    <a href="#" class="header__contact">Contact Us</a>
+    <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
   <main>
-    <div class="aside">
-      <div>
-        <h3 class="aside__title">Cost</h3>
-        <input type="range" min="0" max="500" value="100">
-      </div>
-      <div>
-        <h3 class="aside__title">Color</h3>
-        <ul class="aside__list">
-          <li class="aside__item"><label for="black">Black</label><input type="checkbox" name="black" value="Black" id="black" checked></li>
-          <li class="aside__item"><label for="blue">Blue</label><input type="checkbox" name="blue" value="Blue" id="blue"></li>
-          <li class="aside__item"><label for="green">Green</label><input type="checkbox" name="green" value="Green" id="green"></li>
-          <li class="aside__item"><label for="white">White</label><input type="checkbox" name="white" value="White" id="white"></li>
+    <div class="wrapper">
+      <div class="caption">
+        <h1 class="caption__title title_bigger">Toy for kids</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
+          <li class="breadcrumbs__item"><a href="contact.html">Catalog</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Toys</a></li>
         </ul>
       </div>
-      <div>
-        <h3 class="aside__title">Delivery</h3>
-        <ul class="aside__list">
-          <li class="aside__item"><label for="free">Free shipping</label><input type="radio" name="delivery" value="free" id="free"></li>
-          <li class="aside__item"><label for="fast">Fast shipping</label><input type="radio" name="delivery" value="fast" id="fast"></li>
-        </ul>
-      </div>
-      <div class="amount">
-        <h3 class="amount__title">Amount</h3>
-        <ul class="amount__list">
-          <li class="amount__item">0-5</li>
-          <li class="amount__item">10-20</li>
-          <li class="amount__item">10-20</li>
-        </ul>
-      </div>
-      <input type="submit" value="Apply" class="aside__button">
     </div>
+    <div class="features">
+      <div class="features__wrapper wrapper">
+        <div class="features__item range">
+          <p class=features__title>Cost</p>
+          <input type="range" min="0" max="500" value="100">
+          <div class="range__level">
+            <div class="range__level_low">0</div>
+            <div class="range__level_high">500</div>
+          </div>
+        </div>
+        <div class="features__item">
+          <p class=features__title>Color</p>
+          <ul class="color__list">
+            <li class="color__item">
+              <input type="checkbox" name="black" value="Black" 
+              class="checkbox__input" id="black" checked>
+              <label for="black" class="checkbox__label toys-checkbox__label">Black</label>
+            </li>
 
-    <h1>Toy for kids</h1>
-    <ul class="nav-list">
-      <li class="nav-list__item"><a href="index.html">Home</a></li>
-      <li class="nav-list__item"><a href="catalog.html">Catalog</a></li>
-      <li class="nav-list__item_active"><a href="catalog.html">Toys</a></li>
-    </ul>
+            <li class="color__item">
+              <input type="checkbox" name="blue" value="Blue" class="checkbox__input" id="blue">
+              <label for="blue" class="checkbox__label toys-checkbox__label">Blue</label>
+            </li>
 
-    <section class="products">
-      <h2 class="hidden">Products</h2>
+            <li class="color__item">
+            <input type="checkbox" name="green" value="Green" class="checkbox__input"  id="green">
+            <label for="green" class="checkbox__label toys-checkbox__label">Green</label>
+            </li>
+
+            <li class="color__item">
+            <input type="checkbox" name="white" value="White" class="checkbox__input" id="white">
+            <label for="white" class="checkbox__label toys-checkbox__label">White</label>
+            </li>
+          </ul>
+        </div>
+        <div class="features__item">
+          <p class=features__title>Delivery</p>
+          <ul class="delivery__list">
+            <li class="delivery__item">
+            <input type="radio" name="delivery" value="free" id="free" class="radio__input" checked>
+            <label for="free" class="radio__label">Free shipping</label>
+            </li>
+            <li class="delivery__item">
+            <input type="radio" name="delivery" value="fast" id="fast" class="radio__input">
+            <label for="fast" class="radio__label">Fast shipping</label>
+            </li>
+          </ul>
+        </div>
+        <div class="features__item">
+          <p class=features__title>Amount</p>
+          <ul class="amount__list">
+            <li class="amount__item">
+            <input type="radio" name="amount-tab" id="amount__tab1" class="amount-tab__input" checked>
+            <label for="amount__tab1" class="amount-tab__label">0-5</label>
+            </li>
+            <li class="amount__item">
+            <input type="radio" name="amount-tab" id="amount__tab2" class="amount-tab__input">
+            <label for="amount__tab2" class="amount-tab__label">10-20</label>
+            </li>
+            <li class="amount__item">
+            <input type="radio" name="amount-tab" id="amount__tab3" class="amount-tab__input">
+            <label for="amount__tab3" class="amount-tab__label">20-50</label>
+            </li>
+          </ul>
+        </div>
+        <button class="button" type="submit">Apply</button>
+      </div>
+    </div>
+    <div class="products wrapper">
       <ul class="products__list">
         <li class="products__item">
           <a href="#">
-            <img src="pic/toy_sharky.png" alt="toy_sharky"></a>
+            <img src="pic/toy_sharky.png" alt="toy_sharky" class="products__img"></a>
           <p class="products__name">SHARKY BEAN BAG CHAIR COVER</p>
           <p class="products__price">$60.00 USD</p>
         </li>
         <li class="products__item">
           <a href="#">
-            <img src="pic/brass.png" alt="brass"></a>
+            <img src="pic/brass.png" alt="brass" class="products__img"></a>
           <p class="products__name">BRASS DECO FRAMES</p>
           <p class="products__price">$66.00 USD</p>
         </li>
         <li class="products__item">
           <a href="#">
-            <img src="pic/cibo.png" alt="cibo"></a>
+            <img src="pic/cibo.png" alt="cibo" class="products__img"></a>
           <p class="products__name">CIBO FULL APRON</p>
           <p class="products__price">$60.00 USD</p>
         </li>
         <li class="products__item">
           <a href="#">
-            <img src="pic/gatcha.png" alt="gatcha"></a>
+            <img src="pic/gatcha.png" alt="gatcha" class="products__img"></a>
           <p class="products__name">GATCHA GATCHA GUMBALL MACHINE</p>
           <p class="products__price">$56.00 USD</p>
         </li>
         <li class="products__item">
           <a href="#">
-            <img src="pic/christams.png" alt="cristmas"></a>
+            <img src="pic/christams.png" alt="cristmas" class="products__img"></a>
           <p class="products__name">CHRISTMAS ADVENT SCENTED CANDLE</p>
           <p class="products__price">$29.00 USD</p>
         </li>
         <li class="products__item">
           <a href="#">
-            <img src="pic/tangle.png" alt="tangle"></a>
+            <img src="pic/tangle.png" alt="tangle" class="products__img"></a>
           <p class="products__name">TANGLE SPINNING TEA LIGHT</p>
           <p class="products__price">$56.00 USD</p>
         </li>
       </ul>
-      <div class="pages">
-        <button class="pages__button_left"></button>
-        <ul class="pages__list">
-          <li class="pages__item_active"><a href="">1</a></li>
-          <li class="pages__item"><a href="">2</a></li>
-          <li class="pages__item"><a href="">3</a></li>
-          <li class="pages__item"><a href="">4</a></li>
+      <div class="products__pagination pagination">
+        <button class="pagination__button pagination__button_left"></button>
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item_active"><a href="">1</a></li>
+          <li class="pagination__item"><a href="">2</a></li>
+          <li class="pagination__item"><a href="">3</a></li>
+          <li class="pagination__item"><a href="">4</a></li>
         </ul>
-        <button class="pages__button_right"></button>
+        <button class="pagination__button pagination__button_right"></button>
       </div>
-    </section>
+    </div>
   </main>
-  <footer class="footer">
-    <nav class=footer__nav>
-      <section class="footer__section">
+    <footer class="footer">
+    <nav class="footer__nav wrapper">
+      <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">About Us</a></li>
           <li class="footer-section__item"><a href="#">Blog</a></li>
@@ -126,10 +170,9 @@
           <li class="footer-section__item"><a href="#">2018 Holiday Catalog</a></li>
           <li class="footer-section__item"><a href="#">Shop By Designer</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Customer Information</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">Contact Us</a></li>
           <li class="footer-section__item"><a href="#">Sale Exclusions</a></li>
@@ -138,12 +181,11 @@
           <li class="footer-section__item"><a href="#">Privacy Policy</a></li>
           <li class="footer-section__item"><a href="#">Search</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <div class="footer__line_short"></div>
         <form class="footer__form" action="#">
-          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit" >Join</button>
+          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
           <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
@@ -151,20 +193,31 @@
           <li class="footer-socials__item"><a href="#"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
           <li class="footer-socials__item"><a href="#"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
         </ul>
-      </section>
+      </div>
     </nav>
-    <div class="footer__line_long"></div>
-    <section class="footer__author-block">
-      <h2 class="hidden">about author</h2>
-      <div>
-        <p class="footer__author-rating">Company Rating</p>
+    <div class="company-info wrapper">
+      <div class="company-rating">
+
+            <input type="checkbox" id="star1" class="star__input">
+            <label for="star1" class="star__label"></label>
+
+            <input type="checkbox" id="star2" class="star__input">
+            <label for="star2" class="star__label"></label>
+
+            <input type="checkbox" id="star3" class="star__input">
+            <label for="star3" class="star__label"></label>
+
+            <input type="checkbox" id="star4" class="star__input">
+            <label for="star4" class="star__label"></label>
+
+            <input type="checkbox" id="star5" class="star__input">
+            <label for="star5" class="star__label"></label>
+
+        <p class="company-rating__text">Company Rating</p>
       </div>
-      <div class="footer__copyright">
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-      </div>
-      <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
-      </div>
-    </section>
+      <p class="company-info__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a href="#" class="company-info__link_dark">Web Design — Direct Line Development</a>
+    </div>
   </footer>
 </body>
 

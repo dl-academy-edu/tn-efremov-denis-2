@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/catalog.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -19,47 +25,50 @@
       </ul>
     </nav>
     <button class="header__search"></button>
-    <a href="#" class="header__contact">Contact Us</a>
+    <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
-  <main>
-    <h1>Category Products</h1>
-    <ul class="nav-list">
-      <li class="nav-list__item"><a href="index.html">Home</a></li>
-      <li class="nav-list__item_active"><a href="catalog.html">Catalog</a></li>
+  <main class="wrapper">
+   <div class="caption">
+    <h1 class="caption__title title_bigger">Category Products</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
+      <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Catalog</a></li>
     </ul>
-    <section class="category">
-      <ul class="category__list">
+    </div>
+    <div class="catalog">
+      <ul class="catalog__list">
         <li class="category__item category_kids"><a href="#">
-            <!--tshort-->APPAREL KIDS
+            APPAREL KIDS
           </a></li>
         <li class="category__item category_holiday"><a href="#">
-            <!--sock-->HOLIDAY SHOP
+            HOLIDAY SHOP
           </a></li>
-        <li class="category__item category_toys"><a href="#">
-            <!--deer-->TOYS
+        <li class="category__item category_toys"><a href="toys.html">
+            TOYS
           </a></li>
         <li class="category__item category_accessories"><a href="#">
-            <!--troll-->ACCESSORIES
+            ACCESSORIES
           </a></li>
         <li class="category__item category_sale"><a href="#">
-            <!--flamingo-->SALE
+            SALE
           </a></li>
         <li class="category__item category_adults"><a href="#">
-            <!--dress-->APPAREL ADULTS
+            APPAREL ADULTS
           </a></li>
       </ul>
 
-      <h2 class="category__caption">Product Description</h2>
-      <p class="category__description">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-      <p class="category__description">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-      <p class="category__description">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
-    </section>
+      <h2 class="title_smaller">Product Description</h2>
+      <div class="catalog-item__desc">
+        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+      </div>
+    </div>
   </main>
-  <footer class="footer">
-    <nav class=footer__nav>
-      <section class="footer__section">
+    <footer class="footer">
+    <nav class="footer__nav wrapper">
+      <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">About Us</a></li>
           <li class="footer-section__item"><a href="#">Blog</a></li>
@@ -68,10 +77,9 @@
           <li class="footer-section__item"><a href="#">2018 Holiday Catalog</a></li>
           <li class="footer-section__item"><a href="#">Shop By Designer</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Customer Information</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">Contact Us</a></li>
           <li class="footer-section__item"><a href="#">Sale Exclusions</a></li>
@@ -80,12 +88,11 @@
           <li class="footer-section__item"><a href="#">Privacy Policy</a></li>
           <li class="footer-section__item"><a href="#">Search</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <div class="footer__line_short"></div>
         <form class="footer__form" action="#">
-          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit" >Join</button>
+          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
           <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
@@ -93,20 +100,31 @@
           <li class="footer-socials__item"><a href="#"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
           <li class="footer-socials__item"><a href="#"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
         </ul>
-      </section>
+      </div>
     </nav>
-    <div class="footer__line_long"></div>
-    <section class="footer__author-block">
-      <h2 class="hidden">about author</h2>
-      <div>
-        <p class="footer__author-rating">Company Rating</p>
+    <div class="company-info wrapper">
+      <div class="company-rating">
+
+            <input type="checkbox" id="star1" class="star__input">
+            <label for="star1" class="star__label"></label>
+
+            <input type="checkbox" id="star2" class="star__input">
+            <label for="star2" class="star__label"></label>
+
+            <input type="checkbox" id="star3" class="star__input">
+            <label for="star3" class="star__label"></label>
+
+            <input type="checkbox" id="star4" class="star__input">
+            <label for="star4" class="star__label"></label>
+
+            <input type="checkbox" id="star5" class="star__input">
+            <label for="star5" class="star__label"></label>
+
+        <p class="company-rating__text">Company Rating</p>
       </div>
-      <div class="footer__copyright">
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-      </div>
-      <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
-      </div>
-    </section>
+      <p class="company-info__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a href="#" class="company-info__link_dark">Web Design — Direct Line Development</a>
+    </div>
   </footer>
 </body>
 

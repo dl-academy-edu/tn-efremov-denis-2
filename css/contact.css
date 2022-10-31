@@ -1,13 +1,8 @@
-label {
-  display: block;
-  font-size: 14px;
-  line-height: 19px;
-}
 
-.contacts {
+.contacts{
   display: flex;
   justify-content: space-between;
-  margin: 50px 0 60px 0;
+  margin: 0 0 60px 0;
 }
 
 .contacts__form {
@@ -26,36 +21,28 @@ label {
   display: flex;
   justify-content: space-between;
 }
-.label-message__wrapper{
-    display: flex;
+
+.label-message__wrapper {
+  display: flex;
   flex-direction: column;
   margin: 0 0 22px 0;
 }
 
-#name {
+.name,
+.phone,
+.email {
   padding: 14px 0 11px 20px;
   border: 1px solid #CCCCCC;
   font-size: 18px;
   line-height: 25px;
 }
 
-#phone {
+.phone,
+.email {
   width: 290px;
-  padding: 14px 0 11px 20px;
-  border: 1px solid #CCCCCC;
-  font-size: 18px;
-  line-height: 25px;
 }
 
-#email {
-  width: 290px;
-  padding: 14px 0 11px 20px;
-  border: 1px solid #CCCCCC;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-#message {
+.message {
   height: 150px;
   resize: none;
   padding: 14px 0 11px 20px;
@@ -63,48 +50,14 @@ label {
   font-size: 18px;
   line-height: 25px;
 }
-.checkbox {
-  display: none;
-}
 
-.checkbox__label {
+/*checkbox*/
+
+.contacts__checkbox{
   padding-left: 34px;
   margin-bottom: 17px;
-  font-size: 14px;
-  line-height: 19px;
-  position: relative;
 }
 
-.checkbox__label::before {
-  content: "";
-  box-sizing: border-box;
-  display: block;
-  width: 19px;
-  height: 19px;
-  border: 2px solid #C29974;
-  border-radius: 3px;
-  position: absolute;
-  top: -2px;
-  left: 0;
-}
-
-.checkbox__label::after {
-  content: "";
-  display: block;
-  background-image: url(../pic/check_signe.png);
-  background-repeat: no-repeat;
-  box-sizing: border-box;
- opacity: 0;
- width: 14.23px;
-height: 14.64px;
-  position: absolute;
-  top: -2px;
-  left: 3px;
-}
-
-.checkbox:checked+.checkbox__label::after {
-opacity: 1;
-    }
 
 .contacts__desc {
   width: 380px;

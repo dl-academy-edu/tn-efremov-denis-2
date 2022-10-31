@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Contacts</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,49 +28,51 @@
     <a href="#" class="header__contact">Contact Us</a>
   </header>
   <main class="wrapper">
-    <h1 class="title_bigger">Contact Us</h1>
-    <ul class="pagination">
-      <li class="pagination__page"><a href="index.html">Home</a></li>
-      <li class="pagination__page_active"><a href="contact.html">Contact us</a></li>
-    </ul>
-    <section class="contacts">
-    <h2 class="hidden">User contacts</h2>
-    <form class="contacts__form" action="#" method="post">
-      <div class="label__wrapper">
-      <label for="name">Name</label>
-      <input id="name" type="text" placeholder="Ivan Ivanov">
+    <div class="caption">
+      <h1 class="caption__title title_bigger">Contact Us</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
+        <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="contacts">
+      <form class="contacts__form" action="#" method="post">
+        <div class="label__wrapper">
+          <label for="name">Name</label>
+          <input id="name" class="name" type="text" placeholder="Ivan Ivanov">
+        </div>
+        <div class="two-columns__wrapper">
+          <div class="label__wrapper">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" class="phone">
+          </div>
+          <div class="label__wrapper">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email">
+          </div>
+        </div>
+        <div class="label-message__wrapper">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="message"></textarea>
+        </div>
+        <div class="contacts__checkbox">
+        <input type="checkbox" class="checkbox__input" id="check">
+        <label class="checkbox__label contacts-checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+        </div>
+        <button type="submit" class="button">Submit</button>
+  
+      </form>
+      <div class="contacts__desc">
+        <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="contacts__desc_big">An expert is waiting to help you!</p>
       </div>
-      <div class="two-columns__wrapper">
-      <div class="label__wrapper">
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone">
-      </div>
-      <div class="label__wrapper">
-      <label for="email">Email</label>
-      <input type="email" id="email">
-      </div>
-      </div>
-      <div class="label-message__wrapper">
-       <label for="message">Message</label>
-      <textarea name="message" id="message"></textarea>
-      </div>
-        <input type="checkbox" class="checkbox" id="check">
-        <label class="checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
-      <button type="submit" class="button">Submit</button>
-    </form>
-    <section class="contacts__desc">
-     <h2 class="hidden">Contact description</h2>
-      <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
-      <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-      <p class="contacts__desc_big">An expert is waiting to help you!</p>
-    </section>
-    </section>
+    </div>
   </main>
-  <footer class="footer">
-    <nav class=footer__nav>
-      <section class="footer__section">
+    <footer class="footer">
+    <nav class="footer__nav wrapper">
+      <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">About Us</a></li>
           <li class="footer-section__item"><a href="#">Blog</a></li>
@@ -77,10 +81,9 @@
           <li class="footer-section__item"><a href="#">2018 Holiday Catalog</a></li>
           <li class="footer-section__item"><a href="#">Shop By Designer</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Customer Information</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">Contact Us</a></li>
           <li class="footer-section__item"><a href="#">Sale Exclusions</a></li>
@@ -89,12 +92,11 @@
           <li class="footer-section__item"><a href="#">Privacy Policy</a></li>
           <li class="footer-section__item"><a href="#">Search</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <div class="footer__line_short"></div>
         <form class="footer__form" action="#">
-          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit" >Join</button>
+          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
           <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
@@ -102,20 +104,31 @@
           <li class="footer-socials__item"><a href="#"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
           <li class="footer-socials__item"><a href="#"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
         </ul>
-      </section>
+      </div>
     </nav>
-    <div class="footer__line_long"></div>
-    <section class="footer__author-block">
-      <h2 class="hidden">about author</h2>
-      <div>
-        <p class="footer__author-rating">Company Rating</p>
+    <div class="company-info wrapper">
+      <div class="company-rating">
+
+            <input type="checkbox" id="star1" class="star__input">
+            <label for="star1" class="star__label"></label>
+
+            <input type="checkbox" id="star2" class="star__input">
+            <label for="star2" class="star__label"></label>
+
+            <input type="checkbox" id="star3" class="star__input">
+            <label for="star3" class="star__label"></label>
+
+            <input type="checkbox" id="star4" class="star__input">
+            <label for="star4" class="star__label"></label>
+
+            <input type="checkbox" id="star5" class="star__input">
+            <label for="star5" class="star__label"></label>
+
+        <p class="company-rating__text">Company Rating</p>
       </div>
-      <div class="footer__copyright">
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-      </div>
-      <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
-      </div>
-    </section>
+      <p class="company-info__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a href="#" class="company-info__link_dark">Web Design — Direct Line Development</a>
+    </div>
   </footer>
 </body>
 

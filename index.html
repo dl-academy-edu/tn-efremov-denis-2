@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Personal project</title>
+  <title>DLK Main</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,8 +26,8 @@
     <button class="header__search"></button>
     <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
-  <main>
-    <section class="banner wrapper">
+  <main class="wrapper">
+    <section class="banner">
       <div class="banner__background">
         <p class="banner__number">01</p>
         <div class="banner__wrapper">
@@ -46,9 +46,8 @@
         </div>
         <p class="banner__text_bottom">Free (continental) USA shipping on all orders of $100 USD or more!</p>
       </div>
-
     </section>
-    <section class="category wrapper">
+    <section class="category">
       <h2 class="title_smaller category__title">Category Products</h2>
       <ul class="category__list">
         <li class="category__item category_kids"><a href="#">
@@ -70,34 +69,38 @@
         <p class="category-nav__description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
       </div>
     </section>
-    <section class="delivery wrapper">
-     <h2 class="hidden">delivery content</h2>
+    <section class="delivery">
+      <h2 class="hidden">delivery content</h2>
       <img class="delivery__img" src="pic/woman.jpg" alt="woman">
       <section class="delivery__text">
-        <input type="radio" name="delivery_tab" id="delivery_tab1" checked>
+        <input type="radio" name="delivery_tab" id="delivery_tab1" class="delivery_tab1" checked>
         <label for="delivery_tab1">Delivery</label>
-        <input type="radio" name="delivery_tab" id="delivery_tab2">
-        <label for="delivery_tab2">Guarantee</label><input type="radio" name="delivery_tab" id="delivery_tab3">
+
+        <input type="radio" name="delivery_tab" class="delivery_tab2" id="delivery_tab2">
+        <label for="delivery_tab2">Guarantee</label>
+
+        <input type="radio" name="delivery_tab" class="delivery_tab3" id="delivery_tab3">
         <label for="delivery_tab3">Credit</label>
-        <h2 class="title_smaller" id="tab_title1">Delivery</h2>
-        <h2 class="title_smaller" id="tab_title2">Guarantee</h2>
-        <h2 class="title_smaller" id="tab_title3">Credit</h2>
-        <div class="delivery__content" id="tab_content1">
+
+        <h2 class="title_smaller tab_title1">Delivery</h2>
+        <h2 class="title_smaller tab_title2">Guarantee</h2>
+        <h2 class="title_smaller tab_title3">Credit</h2>
+        <div class="delivery__content tab_content1">
           <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
           <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
         </div>
-        <div class="delivery__content" id="tab_content2">
+        <div class="delivery__content tab_content2">
           <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
           <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
         </div>
-        <div class="delivery__content" id="tab_content3">
+        <div class="delivery__content tab_content3">
           <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
           <p>What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
         </div>
         <a href="#" class='button'>LEARN MORE</a>
       </section>
     </section>
-    <article class="sponsors wrapper">
+    <article class="sponsors">
       <h3 class="hidden">sponsors</h3>
       <ul class="sponsors__list">
         <li class="sponsors__item"><a href=""><img src="pic/mail_logo.png" alt="logo_mail_ru"></a></li>
@@ -106,7 +109,7 @@
         <li class="sponsors__item"><a href=""><img src="pic/owox_logo.png" alt="logo_owox"></a></li>
       </ul>
     </article>
-    <section class="container wrapper">
+    <section class="container">
       <h2 class="hidden">Conteiners</h2>
       <section class="container_left">
         <h2 class="title_smaller container__title">Design Life Kids</h2>
@@ -117,17 +120,15 @@
       <section class="container_right">
         <h2 class="title_smaller container__title">Contacts</h2>
         <p class="container__content">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-        <div class="map">
-          <img src="pic/map.jpg" alt="map">
-        </div>
+
+        <iframe class="map" id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.701318689631!2d37.609425118613935!3d55.7636905667892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1666711220720!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </section>
   </main>
- <footer class="footer">
-    <nav class=footer__nav>
-      <section class="footer__section">
+  <footer class="footer">
+    <nav class="footer__nav wrapper">
+      <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">About Us</a></li>
           <li class="footer-section__item"><a href="#">Blog</a></li>
@@ -136,10 +137,9 @@
           <li class="footer-section__item"><a href="#">2018 Holiday Catalog</a></li>
           <li class="footer-section__item"><a href="#">Shop By Designer</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Customer Information</h3>
-        <div class="footer__line_short"></div>
         <ul class="footer-section__list">
           <li class="footer-section__item"><a href="#">Contact Us</a></li>
           <li class="footer-section__item"><a href="#">Sale Exclusions</a></li>
@@ -148,12 +148,11 @@
           <li class="footer-section__item"><a href="#">Privacy Policy</a></li>
           <li class="footer-section__item"><a href="#">Search</a></li>
         </ul>
-      </section>
-      <section class="footer__section">
+      </div>
+      <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <div class="footer__line_short"></div>
         <form class="footer__form" action="#">
-          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit" >Join</button>
+          <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
           <li class="footer-socials__item"><a href="#"><img src="pic/Facebook.png" alt="logo_facebook"></a></li>
@@ -161,47 +160,62 @@
           <li class="footer-socials__item"><a href="#"><img src="pic/Pinterest.png" alt="logo_round"></a></li>
           <li class="footer-socials__item"><a href="#"><img src="pic/Instagram.png" alt="logo_instagram"></a></li>
         </ul>
-      </section>
+      </div>
     </nav>
-    <div class="footer__line_long"></div>
-    <section class="footer__author-block">
-      <h2 class="hidden">about author</h2>
-      <div>
-        <p class="footer__author-rating">Company Rating</p>
+    <div class="company-info wrapper">
+      <div class="company-rating">
+
+            <input type="checkbox" id="star1" class="star__input">
+            <label for="star1" class="star__label"></label>
+
+            <input type="checkbox" id="star2" class="star__input">
+            <label for="star2" class="star__label"></label>
+
+            <input type="checkbox" id="star3" class="star__input">
+            <label for="star3" class="star__label"></label>
+
+            <input type="checkbox" id="star4" class="star__input">
+            <label for="star4" class="star__label"></label>
+
+            <input type="checkbox" id="star5" class="star__input">
+            <label for="star5" class="star__label"></label>
+
+        <p class="company-rating__text">Company Rating</p>
       </div>
-      <div class="footer__copyright">
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-      </div>
-      <div><a href="#" class="footer__author-link_dark">Web Design — Direct Line Development</a>
-      </div>
-    </section>
+      <p class="company-info__copyright">Copyright © 2018 Dlk • Design Life Kids</p>
+      <a href="#" class="company-info__link_dark">Web Design — Direct Line Development</a>
+    </div>
   </footer>
   <div class="modal">
-     <form class="contacts__form" action="#" method="post">
+    <form class="contacts__form" action="#" method="post">
       <div class="label__wrapper">
-      <label for="name">Name</label>
-      <input id="name" type="text" placeholder="Ivan Ivanov">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Ivan Ivanov">
       </div>
       <div class="two-columns__wrapper">
-      <div class="label__wrapper">
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone">
-      </div>
-      <div class="label__wrapper">
-      <label for="email">Email</label>
-      <input type="email" id="email">
-      </div>
+        <div class="label__wrapper">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone">
+        </div>
+        <div class="label__wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
       </div>
       <div class="label-message__wrapper">
-       <label for="message">Message</label>
-      <textarea name="message" id="message"></textarea>
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
       </div>
-        <input type="checkbox" class="checkbox" id="check">
-        <label class="checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+      <input type="checkbox" class="checkbox" id="check">
+      <label class="checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
       <button type="submit" class="button">Submit</button>
     </form>
     <button class="modal__close"></button>
   </div>
+  <audio autoplay>
+    <source src="julio.mp3" type="audio/mpeg">
+    audio isn't suppoorted
+  </audio>
 </body>
 
 </html>

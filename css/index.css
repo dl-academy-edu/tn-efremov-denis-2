@@ -79,14 +79,14 @@
 }
 
 /*category*/
-.category__title{
+.category__title {
   margin: 0;
 }
+
 .category__list {
   display: flex;
-  margin: 30px 0 38px 0;
+  margin: 30px -10px 38px -10px;
   padding: 0;
-  justify-content: space-between;
 }
 
 .category__nav {
@@ -151,12 +151,13 @@
   display: none;
 }
 
-.delivery__text input[type="radio"]:checked+label{
+.delivery__text input[type="radio"]:checked + label {
   padding: 11px 180px 11px 60px;
   background-color: #E2F1F8;
   margin-left: -60px;
   font-weight: 700;
 }
+
 .delivery__text label {
   display: block;
   order: 2;
@@ -182,30 +183,14 @@
   line-height: 34px;
 }
 
-#delivery_tab1:checked ~ #tab_title1 {
+.delivery_tab1:checked ~ .tab_title1,
+.delivery_tab1:checked ~ .tab_content1,
+.delivery_tab2:checked ~ .tab_title2,
+.delivery_tab2:checked ~ .tab_content2,
+.delivery_tab3:checked ~ .tab_title3,
+.delivery_tab3:checked ~ .tab_content3 {
   display: block;
 }
-
-#delivery_tab1:checked ~ #tab_content1 {
-  display: block;
-}
-
-#delivery_tab2:checked ~ #tab_title2 {
-  display: block;
-}
-
-#delivery_tab2:checked ~ #tab_content2 {
-  display: block;
-}
-
-#delivery_tab3:checked ~ #tab_title3 {
-  display: block;
-}
-
-#delivery_tab3:checked ~ #tab_content3 {
-  display: block;
-}
-
 
 .delivery__text .button {
   order: 4;
@@ -213,7 +198,7 @@
 
 /*sponsors*/
 
-.sponsors__list{
+.sponsors__list {
   display: flex;
   justify-content: space-between;
   padding: 0 0 0 0;
@@ -221,10 +206,11 @@
 }
 
 /*containers*/
-.container{
+.container {
   display: flex;
   align-items: flex-start;
 }
+
 .container_left {
   width: 543px;
   background-color: #E1F0F7;
@@ -240,25 +226,28 @@
   position: relative;
 }
 
-.container__title{
+.container__title {
   margin: -26px 0 10px 0;
 }
-.container_right .container__content{
+
+.container_right .container__content {
   margin: 20px 0 102px 0;
 }
-.container__caption{
+
+.container__caption {
   margin: 0 0 0 0;
 }
-.container__content{
+
+.container__content {
   margin: 10px 0 0 0;
 }
-.container_left .button{
+
+.container_left .button {
   margin: 20px 0 27px 0;
 }
 
-.map{
- position: absolute;
- top: 137px;
- left: 30px;
+.map {
+  position: absolute;
+  top: 137px;
+  left: 30px;
 }
-

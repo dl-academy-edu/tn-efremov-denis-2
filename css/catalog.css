@@ -1,0 +1,25 @@
+.catalog {
+  padding-left: 200px;
+
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 50px -10px 32px -10px;
+  max-width: 100%;
+}
+
+.category__item:first-child {
+  margin-left: -190px;
+}
+
+.catalog-item__desc {
+  max-width: 66%;
+  margin: 25px 0 55px 0;
+}
+
+.catalog-item__desc p {
+  margin: 0 0 15px 0;
+}
