@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Catalog</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,43 +25,47 @@
       </ul>
     </nav>
     <button class="header__search"></button>
-    <a href="contact.html" class="header__contact">Contact Us</a>
+    <a href="#" class="header__contact">Contact Us</a>
   </header>
   <main class="wrapper">
-   <div class="caption">
-    <h1 class="caption__title title_bigger">Category Products</h1>
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
-      <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Catalog</a></li>
-    </ul>
-    </div>
-    <div class="catalog">
-      <ul class="catalog__list">
-        <li class="category__item category_kids"><a href="#">
-            APPAREL KIDS
-          </a></li>
-        <li class="category__item category_holiday"><a href="#">
-            HOLIDAY SHOP
-          </a></li>
-        <li class="category__item category_toys"><a href="toys.html">
-            TOYS
-          </a></li>
-        <li class="category__item category_accessories"><a href="#">
-            ACCESSORIES
-          </a></li>
-        <li class="category__item category_sale"><a href="#">
-            SALE
-          </a></li>
-        <li class="category__item category_adults"><a href="#">
-            APPAREL ADULTS
-          </a></li>
+    <div class="caption">
+      <h1 class="caption__title title_bigger">Contact Us</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
+        <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Contact us</a></li>
       </ul>
-
-      <h2 class="title_smaller">Product Description</h2>
-      <div class="catalog-item__desc">
-        <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-        <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-        <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    </div>
+    <div class="contacts">
+      <form class="contacts__form" action="#" method="post">
+        <div class="label__wrapper">
+          <label for="name">Name</label>
+          <input id="name" class="name" type="text" placeholder="Ivan Ivanov">
+        </div>
+        <div class="two-columns__wrapper">
+          <div class="label__wrapper">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" class="phone">
+          </div>
+          <div class="label__wrapper">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email">
+          </div>
+        </div>
+        <div class="label-message__wrapper">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="message"></textarea>
+        </div>
+        <div class="contacts__checkbox">
+        <input type="checkbox" class="checkbox__input" id="check">
+        <label class="checkbox__label contacts-checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+        </div>
+        <button type="submit" class="button">Submit</button>
+  
+      </form>
+      <div class="contacts__desc">
+        <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+        <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+        <p class="contacts__desc_big">An expert is waiting to help you!</p>
       </div>
     </div>
   </main>

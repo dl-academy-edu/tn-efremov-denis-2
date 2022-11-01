@@ -1,0 +1,39 @@
+.articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px 0 -10px;
+}
+
+.articles__item {
+  width: 380px;
+  margin: 0 10px 14px 10px;
+}
+
+.articles__img {
+  margin-bottom: 20px;
+}
+
+.articles__date {
+  color: #818181;
+  margin-bottom: 7px;
+}
+
+.articles__title {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1E0606;
+  margin-bottom: 15px;
+}
+
+.articles__content {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1E0606;
+}
+
+.blog_pagination{
+  margin: 50px 0 60px 0;
+}
+

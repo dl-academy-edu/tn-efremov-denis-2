@@ -1,0 +1,101 @@
+/*настройка слайдера*/
+input[type=range] {
+  -webkit-appearance: none;
+  width: 188px;
+  /*height: 4px;*/
+  /*width: 100%;*/
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/*рамка при фокусе*/
+/*input[type=range]:focus {
+  outline: none;
+}*/
+
+input[type=range]::-ms-track {
+  width: 188px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/*бегунок*/
+/* WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 8.35px solid #C29974;
+  cursor: pointer;
+  margin-top: -10px;
+
+}
+
+/* Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 7.3px;
+  width: 7.3px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 8.35px solid #C29974;
+  cursor: pointer;
+}
+
+/* IE */
+input[type=range]::-ms-thumb {
+  height: 7.3px;
+  width: 7.3px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 8.35px solid #C29974;
+  cursor: pointer;
+}
+
+/*полоса*/
+input[type=range]::-webkit-slider-runnable-track {
+  width: 188px;
+  height: 4px;
+  cursor: pointer;
+  background: #000000;
+}
+
+input[type=range]::-moz-range-track {
+  width: 188px;
+  height: 4px;
+  cursor: pointer;
+  background: #000000;
+}
+
+/*Заполнение полосы */
+input[type=range]::-moz-range-progress {
+  background-color: #C29974;
+  border: 0.1px solid #C29974;
+}
+
+input[type=range]::-ms-track {
+  width: 188px;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: #C29974;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #C29974;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: #000000;
+}
