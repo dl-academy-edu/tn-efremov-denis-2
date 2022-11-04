@@ -30,17 +30,19 @@
 
 .color__item{
   margin-bottom: 15px;
-  padding-left: 29px;
+  position: relative;
 }
 
 .delivery__item{
   margin-bottom: 10px;
-  padding-left: 30px;
+  position: relative;
 }
+
 
 .amount__list{
   display: flex;
 }
+
 
 .amount-tab__label{
   width: 80px;
@@ -90,3 +92,63 @@
 .products__pagination{
   margin: 50px 0 60px 0;
 }
+
+/*checkbox*/
+
+.toys-checkbox__label {
+  margin-left: 29px;
+  cursor: pointer;
+}
+
+/*radio*/
+.delivery__item>input[type="radio"],
+.amount__item>input[type="radio"]
+{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.delivery__item>label{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.delivery__item>label::before {
+  content: "";
+  box-sizing: border-box;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C29974;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.delivery__item>label::after {
+  content: "";
+  box-sizing: border-box;
+  opacity: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #C29974;
+  border-radius: 6px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #C29974;
+  cursor: pointer;
+}
+
+.radio__input:checked + .radio__label::after {
+  opacity: 1;
+}
+
+.radio__input:focus + .radio__label::before {
+  outline: #4d6db1 solid 2px;
+}
+

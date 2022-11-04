@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>Toys</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/toys.css">
   <link rel="stylesheet" href="css/range.css">
 
@@ -25,16 +24,16 @@
         <li class="header__item"><a href="#">About Us</a></li>
       </ul>
     </nav>
-    <button class="header__search"></button>
+    <button class="header__search" aria-label="search"></button>
     <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
   <main>
     <div class="wrapper">
       <div class="caption">
         <h1 class="caption__title title_bigger">Toy for kids</h1>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs" aria-label="page navrigation">
           <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
-          <li class="breadcrumbs__item"><a href="contact.html">Catalog</a></li>
+          <li class="breadcrumbs__item"><a href="catalog.html">Catalog</a></li>
           <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Toys</a></li>
         </ul>
       </div>
@@ -146,19 +145,20 @@
           <p class="products__price">$56.00 USD</p>
         </li>
       </ul>
-      <div class="products__pagination pagination">
-        <button class="pagination__button pagination__button_left"></button>
-        <ul class="pagination__list">
-          <li class="pagination__item pagination__item_active"><a href="">1</a></li>
-          <li class="pagination__item"><a href="">2</a></li>
-          <li class="pagination__item"><a href="">3</a></li>
-          <li class="pagination__item"><a href="">4</a></li>
-        </ul>
-        <button class="pagination__button pagination__button_right"></button>
-      </div>
+    <div class="products__pagination pagination">
+      <button class="pagination__button pagination__button_left" aria-label="pagination button left"></button>
+      <ul class="pagination__list" aria-label="pages">
+        <li class="pagination__item pagination__item_active"><a href="">1</a></li>
+        <li class="pagination__item"><a href="">2</a></li>
+        <li class="pagination__item"><a href="">3</a></li>
+        <li class="pagination__item"><a href="">4</a></li>
+      </ul>
+      <button class="pagination__button pagination__button_right" aria-label="pagination button right"></button>
+    </div>
     </div>
   </main>
-    <footer class="footer">
+   
+  <footer class="footer">
     <nav class="footer__nav wrapper">
       <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
@@ -184,7 +184,7 @@
       </div>
       <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <form class="footer__form" action="#">
+        <form class="footer__form" action="#" aria-label="email">
           <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
@@ -198,20 +198,20 @@
     <div class="company-info wrapper">
       <div class="company-rating">
 
-            <input type="checkbox" id="star1" class="star__input">
-            <label for="star1" class="star__label"></label>
+        <input type="checkbox" id="star1" class="star__input" aria-label="rating star checkbox">
+        <label for="star1" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star2" class="star__input">
-            <label for="star2" class="star__label"></label>
+        <input type="checkbox" id="star2" class="star__input" aria-label="rating star checkbox">
+        <label for="star2" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star3" class="star__input">
-            <label for="star3" class="star__label"></label>
+        <input type="checkbox" id="star3" class="star__input" aria-label="rating star checkbox">
+        <label for="star3" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star4" class="star__input">
-            <label for="star4" class="star__label"></label>
+        <input type="checkbox" id="star4" class="star__input" aria-label="rating star checkbox">
+        <label for="star4" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star5" class="star__input">
-            <label for="star5" class="star__label"></label>
+        <input type="checkbox" id="star5" class="star__input" aria-label="rating star checkbox">
+        <label for="star5" class="star__label" aria-label="rating star img"></label>
 
         <p class="company-rating__text">Company Rating</p>
       </div>

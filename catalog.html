@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/catalog.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,36 +23,36 @@
         <li class="header__item"><a href="#">About Us</a></li>
       </ul>
     </nav>
-    <button class="header__search"></button>
+    <button class="header__search" aria-label="search"></button>
     <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
   <main class="wrapper">
    <div class="caption">
     <h1 class="caption__title title_bigger">Category Products</h1>
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs" aria-label="page navrigation">
       <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
       <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Catalog</a></li>
     </ul>
     </div>
     <div class="catalog">
       <ul class="catalog__list">
-        <li class="category__item category_kids"><a href="#">
-            APPAREL KIDS
+        <li class="category__item category__kids"><a href="#" class="category__link">
+            <p>APPAREL KIDS</p>
           </a></li>
-        <li class="category__item category_holiday"><a href="#">
-            HOLIDAY SHOP
+        <li class="category__item category__holiday"><a href="#" class="category__link">
+            <p>HOLIDAY SHOP</p>
           </a></li>
-        <li class="category__item category_toys"><a href="toys.html">
-            TOYS
+        <li class="category__item category__toys"><a href="toys.html" class="category__link">
+            <p>TOYS</p>
           </a></li>
-        <li class="category__item category_accessories"><a href="#">
-            ACCESSORIES
+        <li class="category__item category__accessories"><a href="#" class="category__link">
+            <p>ACCESSORIES</p>
           </a></li>
-        <li class="category__item category_sale"><a href="#">
-            SALE
+        <li class="category__item category__sale"><a href="#" class="category__link">
+            <p>SALE</p>
           </a></li>
-        <li class="category__item category_adults"><a href="#">
-            APPAREL ADULTS
+        <li class="category__item category__adults"><a href="#" class="category__link">
+            <p>APPAREL ADULTS</p>
           </a></li>
       </ul>
 
@@ -65,7 +64,8 @@
       </div>
     </div>
   </main>
-    <footer class="footer">
+   
+  <footer class="footer">
     <nav class="footer__nav wrapper">
       <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
@@ -91,7 +91,7 @@
       </div>
       <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <form class="footer__form" action="#">
+        <form class="footer__form" action="#" aria-label="email">
           <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
@@ -105,20 +105,20 @@
     <div class="company-info wrapper">
       <div class="company-rating">
 
-            <input type="checkbox" id="star1" class="star__input">
-            <label for="star1" class="star__label"></label>
+        <input type="checkbox" id="star1" class="star__input" aria-label="rating star checkbox">
+        <label for="star1" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star2" class="star__input">
-            <label for="star2" class="star__label"></label>
+        <input type="checkbox" id="star2" class="star__input" aria-label="rating star checkbox">
+        <label for="star2" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star3" class="star__input">
-            <label for="star3" class="star__label"></label>
+        <input type="checkbox" id="star3" class="star__input" aria-label="rating star checkbox">
+        <label for="star3" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star4" class="star__input">
-            <label for="star4" class="star__label"></label>
+        <input type="checkbox" id="star4" class="star__input" aria-label="rating star checkbox">
+        <label for="star4" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star5" class="star__input">
-            <label for="star5" class="star__label"></label>
+        <input type="checkbox" id="star5" class="star__input" aria-label="rating star checkbox">
+        <label for="star5" class="star__label" aria-label="rating star img"></label>
 
         <p class="company-rating__text">Company Rating</p>
       </div>

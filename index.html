@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -23,7 +22,7 @@
         <li class="header__item"><a href="#">About Us</a></li>
       </ul>
     </nav>
-    <button class="header__search"></button>
+    <button class="header__search" aria-label="search" ></button>
     <a href="contact.html" class="header__contact">Contact Us</a>
   </header>
   <main class="wrapper">
@@ -32,10 +31,10 @@
         <p class="banner__number">01</p>
         <div class="banner__wrapper">
           <div class="banner__buttons">
-            <button class="banner__buttons-item_active"></button>
-            <button class="banner__buttons-item"></button>
-            <button class="banner__buttons-item"></button>
-            <button class="banner__buttons-item"></button>
+            <button class="banner__buttons-item_active" aria-label="bunner selector 01"></button>
+            <button class="banner__buttons-item" aria-label="bunner selector 02"></button>
+            <button class="banner__buttons-item" aria-label="bunner selector 03"></button>
+            <button class="banner__buttons-item" aria-label="bunner selector 04"></button>
           </div>
           <div class="banner__text">
             <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
@@ -50,22 +49,22 @@
     <section class="category">
       <h2 class="title_smaller category__title">Category Products</h2>
       <ul class="category__list">
-        <li class="category__item category_kids"><a href="#">
-            APPAREL KIDS
+        <li class="category__item category__kids"><a class="category__link" href="#">
+          <p>APPAREL KIDS </p>
           </a></li>
-        <li class="category__item category_holiday"><a href="#">
-            HOLIDAY SHOP
+        <li class="category__item category__holiday"><a href="#" class="category__link">
+            <p>HOLIDAY SHOP</p>
           </a></li>
-        <li class="category__item category_toys"><a href="#">
-            TOYS
+        <li class="category__item category__toys"><a href="toys.html" class="category__link">
+            <P>TOYS</P>
           </a></li>
-        <li class="category__item category_accessories"><a href="#">
-            ACCESSORIES
+        <li class="category__item category__accessories"><a href="#" class="category__link">
+            <p>ACCESSORIES</p>
           </a></li>
       </ul>
       <div class="category__nav">
-        <button class="category-nav__button_left"></button>
-        <button class="category-nav__button_right"></button>
+        <button class="category-nav__button_left" aria-label="navigation button left"></button>
+        <button class="category-nav__button_right" aria-label="navigation button right"></button>
         <p class="category-nav__description">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
       </div>
     </section>
@@ -73,13 +72,13 @@
       <h2 class="hidden">delivery content</h2>
       <img class="delivery__img" src="pic/woman.jpg" alt="woman">
       <section class="delivery__text">
-        <input type="radio" name="delivery_tab" id="delivery_tab1" class="delivery_tab1" checked>
+        <input type="radio" name="delivery_tab" id="delivery_tab1" class="delivery__tab1" checked>
         <label for="delivery_tab1">Delivery</label>
 
-        <input type="radio" name="delivery_tab" class="delivery_tab2" id="delivery_tab2">
+        <input type="radio" name="delivery_tab" class="delivery__tab2" id="delivery_tab2">
         <label for="delivery_tab2">Guarantee</label>
 
-        <input type="radio" name="delivery_tab" class="delivery_tab3" id="delivery_tab3">
+        <input type="radio" name="delivery_tab" class="delivery__tab3" id="delivery_tab3">
         <label for="delivery_tab3">Credit</label>
 
         <h2 class="title_smaller tab_title1">Delivery</h2>
@@ -110,7 +109,7 @@
       </ul>
     </article>
     <section class="container">
-      <h2 class="hidden">Conteiners</h2>
+      <h2 class="hidden">Information articles</h2>
       <section class="container_left">
         <h2 class="title_smaller container__title">Design Life Kids</h2>
         <p class="container__caption">About Us</p>
@@ -121,7 +120,7 @@
         <h2 class="title_smaller container__title">Contacts</h2>
         <p class="container__content">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
 
-        <iframe class="map" id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.701318689631!2d37.609425118613935!3d55.7636905667892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1666711220720!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map" id="maps" aria-label="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.701318689631!2d37.609425118613935!3d55.7636905667892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a471b93b34d%3A0x973b1f4e854a1105!2z0KLQstC10YDRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1666711220720!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </section>
   </main>
@@ -151,7 +150,7 @@
       </div>
       <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <form class="footer__form" action="#">
+        <form class="footer__form" action="#" aria-label="email">
           <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
@@ -165,20 +164,20 @@
     <div class="company-info wrapper">
       <div class="company-rating">
 
-            <input type="checkbox" id="star1" class="star__input">
-            <label for="star1" class="star__label"></label>
+        <input type="checkbox" id="star1" class="star__input" aria-label="rating star checkbox">
+        <label for="star1" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star2" class="star__input">
-            <label for="star2" class="star__label"></label>
+        <input type="checkbox" id="star2" class="star__input" aria-label="rating star checkbox">
+        <label for="star2" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star3" class="star__input">
-            <label for="star3" class="star__label"></label>
+        <input type="checkbox" id="star3" class="star__input" aria-label="rating star checkbox">
+        <label for="star3" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star4" class="star__input">
-            <label for="star4" class="star__label"></label>
+        <input type="checkbox" id="star4" class="star__input" aria-label="rating star checkbox">
+        <label for="star4" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star5" class="star__input">
-            <label for="star5" class="star__label"></label>
+        <input type="checkbox" id="star5" class="star__input" aria-label="rating star checkbox">
+        <label for="star5" class="star__label" aria-label="rating star img"></label>
 
         <p class="company-rating__text">Company Rating</p>
       </div>
@@ -187,30 +186,35 @@
     </div>
   </footer>
   <div class="modal">
-    <form class="contacts__form" action="#" method="post">
-      <div class="label__wrapper">
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Ivan Ivanov">
-      </div>
-      <div class="two-columns__wrapper">
+    <form class="contacts__form" action="#" method="post" aria-label="contacts">
         <div class="label__wrapper">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone">
+          <label for="name">Name</label>
+          <input id="name" class="name" type="text" placeholder="Ivan Ivanov">
         </div>
-        <div class="label__wrapper">
-          <label for="email">Email</label>
-          <input type="email" id="email">
+        <div class="two-columns__wrapper">
+          <div class="label__wrapper">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" class="phone">
+          </div>
+          <div class="label__wrapper">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="email">
+          </div>
         </div>
-      </div>
-      <div class="label-message__wrapper">
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
-      </div>
-      <input type="checkbox" class="checkbox" id="check">
-      <label class="checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
-      <button type="submit" class="button">Submit</button>
-    </form>
-    <button class="modal__close"></button>
+        <div class="label-message__wrapper">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="message"></textarea>
+        </div>
+        
+        <div class="contacts__checkbox">
+        <input type="checkbox" class="checkbox__input" id="check">
+        <label class="checkbox__label contacts-checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+        </div>
+        
+        <button type="submit" class="button">Submit</button>
+  
+      </form>
+    <button class="modal__close" aria-label="Close modal window"></button>
   </div>
   <audio autoplay>
     <source src="julio.mp3" type="audio/mpeg">
