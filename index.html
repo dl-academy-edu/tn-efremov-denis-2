@@ -39,7 +39,7 @@
           <div class="banner__text">
             <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
             <p class="banner__text_italic">Designed in Slovenia</p>
-            <a href="#" class='button'>EXPLORE NOW</a>
+            <a href="#" class="button js_button ">EXPLORE NOW</a>
           </div>
           <img class="banner__img" src="pic/monstr.png" alt="baner">
         </div>
@@ -186,7 +186,7 @@
     </div>
   </footer>
   <div class="modal">
-    <form class="contacts__form" action="#" method="post" aria-label="contacts">
+    <form class="contacts__form modal__form" action="#" method="post" aria-label="contacts">
         <div class="label__wrapper">
           <label for="name">Name</label>
           <input id="name" class="name" type="text" placeholder="Ivan Ivanov">
@@ -212,14 +212,16 @@
         </div>
         
         <button type="submit" class="button">Submit</button>
-  
+        
+        <button class="modal__button_close" aria-label="Close modal window"></button>
       </form>
-    <button class="modal__close" aria-label="Close modal window"></button>
+    
   </div>
   <audio autoplay>
     <source src="julio.mp3" type="audio/mpeg">
     audio isn't suppoorted
   </audio>
+<script src="script.js"></script>
 </body>
 
 </html>
