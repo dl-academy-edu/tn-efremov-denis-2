@@ -6,11 +6,12 @@
 
 .articles__item {
   width: 380px;
-  margin: 0 10px 14px 10px;
+  margin: 0 10px 34px 10px;
 }
 
 .articles__img {
   margin-bottom: 20px;
+  background-color: #fe9b00;
 }
 
 .articles__date {
@@ -25,6 +26,13 @@
   line-height: 31px;
   color: #1E0606;
   margin-bottom: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.articles__title:hover,
+.articles__title:active {
+  text-decoration: underline;
 }
 
 .articles__content {
@@ -33,7 +41,6 @@
   color: #1E0606;
 }
 
-.blog__pagination{
-  margin: 50px 0 60px 0;
+.blog__pagination {
+  margin: 16px 0 60px 0;
 }
-

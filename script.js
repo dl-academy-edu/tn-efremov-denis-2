@@ -19,6 +19,6 @@ btnCloseModalWindow.addEventListener("click", function () {
 window.addEventListener("keydown", function (e) {
   if (e.keyCode == 27 && modalWindow.classList.contains("modal_show")) {
     modalWindow.classList.remove("modal_show");
-   btnShowModalWindow.focus();
+    btnShowModalWindow.focus();
   };
 })
