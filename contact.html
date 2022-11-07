@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>Contact</title>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/contact.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,19 +23,19 @@
         <li class="header__item"><a href="#">About Us</a></li>
       </ul>
     </nav>
-    <button class="header__search"></button>
+    <button class="header__search" aria-label="search"></button>
     <a href="#" class="header__contact">Contact Us</a>
   </header>
   <main class="wrapper">
     <div class="caption">
       <h1 class="caption__title title_bigger">Contact Us</h1>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs" aria-label="page navrigation">
         <li class="breadcrumbs__item"><a href="index.html">Home</a></li>
         <li class="breadcrumbs__item breadcrumbs__item_active"><a href="contact.html">Contact us</a></li>
       </ul>
     </div>
     <div class="contacts">
-      <form class="contacts__form" action="#" method="post">
+      <form class="contacts__form" action="#" method="post" aria-label="contacts">
         <div class="label__wrapper">
           <label for="name">Name</label>
           <input id="name" class="name" type="text" placeholder="Ivan Ivanov">
@@ -55,11 +54,13 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" class="message"></textarea>
         </div>
+        
         <div class="contacts__checkbox">
         <input type="checkbox" class="checkbox__input" id="check">
         <label class="checkbox__label contacts-checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
         </div>
-        <button type="submit" class="button">Submit</button>
+        
+        <button type="submit" class="button" >Submit</button>
   
       </form>
       <div class="contacts__desc">
@@ -69,7 +70,7 @@
       </div>
     </div>
   </main>
-    <footer class="footer">
+  <footer class="footer">
     <nav class="footer__nav wrapper">
       <div class="footer__section">
         <h3 class="footer-section__title">Navigation</h3>
@@ -95,7 +96,7 @@
       </div>
       <div class="footer__section">
         <h3 class="footer-section__title">Connect</h3>
-        <form class="footer__form" action="#">
+        <form class="footer__form" action="#" aria-label="email">
           <input class="footer-form__email" type="email" value="Email"><button class="button" type="submit">Join</button>
         </form>
         <ul class="footer__socials">
@@ -109,20 +110,20 @@
     <div class="company-info wrapper">
       <div class="company-rating">
 
-            <input type="checkbox" id="star1" class="star__input">
-            <label for="star1" class="star__label"></label>
+        <input type="checkbox" id="star1" class="star__input" aria-label="rating star checkbox">
+        <label for="star1" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star2" class="star__input">
-            <label for="star2" class="star__label"></label>
+        <input type="checkbox" id="star2" class="star__input" aria-label="rating star checkbox">
+        <label for="star2" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star3" class="star__input">
-            <label for="star3" class="star__label"></label>
+        <input type="checkbox" id="star3" class="star__input" aria-label="rating star checkbox">
+        <label for="star3" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star4" class="star__input">
-            <label for="star4" class="star__label"></label>
+        <input type="checkbox" id="star4" class="star__input" aria-label="rating star checkbox">
+        <label for="star4" class="star__label" aria-label="rating star img"></label>
 
-            <input type="checkbox" id="star5" class="star__input">
-            <label for="star5" class="star__label"></label>
+        <input type="checkbox" id="star5" class="star__input" aria-label="rating star checkbox">
+        <label for="star5" class="star__label" aria-label="rating star img"></label>
 
         <p class="company-rating__text">Company Rating</p>
       </div>
