@@ -4,16 +4,11 @@ input[type=range] {
   width: 188px;
   /*height: 4px;*/
   /*width: 100%;*/
-  margin: 0;
+  margin: 0 0 0 5px;
   padding: 0;
   background-color: transparent;
   border-color: transparent;
 }
-
-/*рамка при фокусе*/
-/*input[type=range]:focus {
-  outline: none;
-}*/
 
 input[type=range]::-ms-track {
   width: 188px;

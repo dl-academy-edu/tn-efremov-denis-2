@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/normalize_compressed.css">
+  <link rel="stylesheet" href="css/common_compressed.css">
+  <link rel="stylesheet" href="css/contact_compressed.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +16,16 @@
 
 <body>
   <header class="header wrapper">
-    <a href="index.html"><img class="logo" src="pic/logo.png" alt="logo"></a>
+    <a href="index.html" class="header__link"><img src="pic/logo.png" alt="logo"></a>
     <nav class="header__menu">
       <ul class="header__list">
-        <li class="header__item"><a href="blog.html">Blog</a></li>
-        <li class="header__item"><a href="catalog.html">Catalog</a></li>
-        <li class="header__item"><a href="#">About Us</a></li>
+        <li class="header__item"><a href="blog.html" class="header__link">Blog</a></li>
+        <li class="header__item"><a href="catalog.html" class="header__link">Catalog</a></li>
+        <li class="header__item"><a href="#" class="header__link">About Us</a></li>
       </ul>
     </nav>
-    <button class="header__search" aria-label="search"></button>
-    <a href="#" class="header__contact">Contact Us</a>
+    <button class="header__search header__link" aria-label="search"></button>
+    <a href="contact.html" class="header__contact header__link">Contact Us</a>
   </header>
   <main class="wrapper">
     <div class="caption">
@@ -54,14 +55,14 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" class="message"></textarea>
         </div>
-        
+
         <div class="contacts__checkbox">
-        <input type="checkbox" class="checkbox__input" id="check">
-        <label class="checkbox__label contacts-checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
+          <input type="checkbox" class="checkbox__input" id="check">
+          <label class="checkbox__label contacts-checkbox__label" for="check">By clicking on the button, you consent to the processing of your personal data</label>
         </div>
-        
-        <button type="submit" class="button" >Submit</button>
-  
+
+        <button type="submit" class="button">Submit</button>
+
       </form>
       <div class="contacts__desc">
         <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
@@ -110,19 +111,19 @@
     <div class="company-info wrapper">
       <div class="company-rating">
 
-        <input type="checkbox" id="star1" class="star__input" aria-label="rating star checkbox">
+        <input type="checkbox" id="star1" class="star__input">
         <label for="star1" class="star__label" aria-label="rating star img"></label>
 
-        <input type="checkbox" id="star2" class="star__input" aria-label="rating star checkbox">
+        <input type="checkbox" id="star2" class="star__input">
         <label for="star2" class="star__label" aria-label="rating star img"></label>
 
-        <input type="checkbox" id="star3" class="star__input" aria-label="rating star checkbox">
+        <input type="checkbox" id="star3" class="star__input">
         <label for="star3" class="star__label" aria-label="rating star img"></label>
 
-        <input type="checkbox" id="star4" class="star__input" aria-label="rating star checkbox">
+        <input type="checkbox" id="star4" class="star__input">
         <label for="star4" class="star__label" aria-label="rating star img"></label>
 
-        <input type="checkbox" id="star5" class="star__input" aria-label="rating star checkbox">
+        <input type="checkbox" id="star5" class="star__input">
         <label for="star5" class="star__label" aria-label="rating star img"></label>
 
         <p class="company-rating__text">Company Rating</p>
